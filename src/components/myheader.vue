@@ -221,3 +221,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+button#headlessui-popover-button-3 {
+    --tw-ring-shadow: none;
+}
+</style>
