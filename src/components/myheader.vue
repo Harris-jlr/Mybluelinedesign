@@ -223,7 +223,7 @@ export default {
 </script>
 
 <style scoped>
-button#headlessui-popover-button-3 {
-    --tw-ring-shadow: none;
+.focus\:ring-2:focus {
+    --tw-ring-shadow: none!important;
 }
 </style>
