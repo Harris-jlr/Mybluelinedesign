@@ -7,7 +7,7 @@ regular text for this!
 
 ### this is an H3
 
-** more test under here! **
+**more test under here!**
 * lets add a list
 * of items to see
 * if the are all bullets
