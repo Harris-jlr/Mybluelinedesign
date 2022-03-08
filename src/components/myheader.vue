@@ -122,9 +122,7 @@
           <div class="py-6 px-5">
             <div class="grid grid-cols-2 gap-4">
               <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Pricing </a>
-
               <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Docs </a>
-
               <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Enterprise </a>
               <a v-for="item in resources" :key="item.name" :href="item.href" class="text-base font-medium text-gray-900 hover:text-gray-700">
                 {{ item.name }}
