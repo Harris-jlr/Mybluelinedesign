@@ -51,23 +51,20 @@ const people = [
   {
     name: 'Heath Brown',
     role: 'Digital Experience Design Director',
-    imageUrl:
-      'assets/Hbrown.f0c679fc.jpg ',
+    imageUrl:  './assets/Hbrown.f0c679fc.jpg ',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Judy Harris',
     role: 'DIGITAL EXPERIENCE DESIGN LEAD',
-    imageUrl:
-      'assets/judyharris.1380485c.jpg',
+    imageUrl: './assets/judyharris.1380485c.jpg',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
   },
   {
     name: 'Cassidy Sisco-Martinez ',
     role: 'DIGITAL TECHNOLOGY JUNIOR ANALYS',
-    imageUrl:
-      'assets/cassidy.950b79bd.jpg',
+    imageUrl:'./assets/cassidy.950b79bd.jpg',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -75,8 +72,7 @@ const people = [
   {
     name: 'Brian Cronk',
     role: 'DIGITAL EXPERIENCE DESIGN SR. ADVISOR',
-    imageUrl:
-      'assets/BrianCronk.4c6ba002.jpg',
+    imageUrl: './assets/BrianCronk.4c6ba002.jpg',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -90,8 +86,7 @@ const people = [
   {
     name: 'Brian Cox',
     role: 'DIGITAL EXPERIENCE DESIGN SENIOR',
-    imageUrl:
-      'assets/BrianCox.14aef4f8.png',
+    imageUrl:  './assets/BrianCox.14aef4f8.png',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -99,14 +94,12 @@ const people = [
   {
     name: 'Jesus Salinas',
     role: 'DIGITAL EXPERIENCE DESIGN SENIOR',
-    imageUrl:
-      'assets/standin3.b8b499ca.png',
+    imageUrl:  './assets/standin3.b8b499ca.png',
   },
   {
     name: 'Sanketh Anchan',
     role: 'DIGITAL EXPERIENCE DESIGN SENIOR',
-    imageUrl:
-      'assets/standin1.a65db6d1.png',
+    imageUrl:  './assets/standin1.a65db6d1.png',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
