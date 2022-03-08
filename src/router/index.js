@@ -13,8 +13,8 @@ import judyharris from '/src/assets/judyharris.jpg'
 import cassidy from '/src/assets/cassidy.jpg'
 import Hbrown from '/src/assets/Hbrown.jpg'
 import liam from '/src/assets/liam.png'
-import standin1 from '/src/assets/standin1.png'
-import standin3 from '/src/assets/standin3.png'
+import jsalinas from '/src/assets/jsalinas.jpeg'
+import sanchan from '/src/assets/sanchan.jpeg'
 
 const routes = [
     {
@@ -88,14 +88,14 @@ const routes = [
       component: liam,
    },
    {
-      path: '/images/standin1.jpg',
-      name: 'standin1.jpg',
-      component: standin1,
+      path: '/images/jsalinas.jpeg',
+      name: 'jsalinas.jpeg',
+      component: jsalinas,
    },
    {
-      path: '/images/standin3.jpg',
-      name: 'standin3.jpg',
-      component: standin3,
+      path: '/images/sanchan.jpeg',
+      name: 'sanchan.jpeg',
+      component: sanchan,
    },
 ]
 

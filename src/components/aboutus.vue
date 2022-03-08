@@ -94,12 +94,12 @@ const people = [
   {
     name: 'Jesus Salinas',
     role: 'DIGITAL EXPERIENCE DESIGN SENIOR',
-    imageUrl:  './assets/standin3.b8b499ca.png',
+    imageUrl:  './assets/jsalinas.jpeg',
   },
   {
     name: 'Sanketh Anchan',
     role: 'DIGITAL EXPERIENCE DESIGN SENIOR',
-    imageUrl:  './assets/standin1.a65db6d1.png',
+    imageUrl:  './assets/sanchan',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
