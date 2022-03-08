@@ -7,7 +7,7 @@ regular text for this!
 
 ### this is an H3
 
-more test under here!
-
+* more test under here! *
+---
 something | another something
 plus more | and more
