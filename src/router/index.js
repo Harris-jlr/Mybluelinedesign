@@ -7,14 +7,14 @@ import container from '/src/views/container.vue'
 import header from '/src/views/header.vue'
 import demo from '/src/views/demo.vue'
 import documentation from '/src/views/documentation.vue'
-import briancronk from '/src/assets/BrianCronk.jpg'
-import briancox from '/src/assets/Briancox.png'
-import judyharris from '/src/assets/judyharris.jpg'
-import cassidy from '/src/assets/cassidy.jpg'
-import Hbrown from '/src/assets/Hbrown.jpg'
-import liam from '/src/assets/liam.png'
-import jsalinas from '/src/assets/jsalinas.jpeg'
-import sanchan from '/src/assets/sanchan.jpeg'
+// import briancronk from '/src/assets/BrianCronk.jpg'
+// import briancox from '/src/assets/Briancox.png'
+// import judyharris from '/src/assets/judyharris.jpg'
+// import cassidy from '/src/assets/cassidy.jpg'
+// import Hbrown from '/src/assets/Hbrown.jpg'
+// import liam from '/src/assets/liam.png'
+// import jsalinas from '/src/assets/jsalinas.jpeg'
+// import sanchan from '/src/assets/sanchan.jpeg'
 
 const routes = [
     {
@@ -57,46 +57,46 @@ const routes = [
       name: 'documentation',
       component: documentation,
    },
-   {
-      path: '/images/briancronk',
-      name: 'briancronk',
-      component: briancronk,
-   },
-   {
-      path: '/images/braincox',
-      name: 'briancox',
-      component: briancox,
-   },
-   {
-      path: '/images/cassidy.jpg',
-      name: 'cassidy.jpg',
-      component: cassidy,
-   },
-   {
-      path: '/images/Hbrown.jpg',
-      name: 'Hbrown.jpg',
-      component: Hbrown,
-   },
-   {
-      path: '/images/judyharris.jpg',
-      name: 'judyharris.jpg',
-      component: judyharris,
-   },
-   {
-      path: '/images/liam.jpg',
-      name: 'liam.jpg',
-      component: liam,
-   },
-   {
-      path: '/images/jsalinas.jpeg',
-      name: 'jsalinas.jpeg',
-      component: jsalinas,
-   },
-   {
-      path: '/images/sanchan.jpeg',
-      name: 'sanchan.jpeg',
-      component: sanchan,
-   },
+   // {
+   //    path: '/images/briancronk',
+   //    name: 'briancronk',
+   //    component: briancronk,
+   // },
+   // {
+   //    path: '/images/braincox',
+   //    name: 'briancox',
+   //    component: briancox,
+   // },
+   // {
+   //    path: '/images/cassidy.jpg',
+   //    name: 'cassidy.jpg',
+   //    component: cassidy,
+   // },
+   // {
+   //    path: '/images/Hbrown.jpg',
+   //    name: 'Hbrown.jpg',
+   //    component: Hbrown,
+   // },
+   // {
+   //    path: '/images/judyharris.jpg',
+   //    name: 'judyharris.jpg',
+   //    component: judyharris,
+   // },
+   // {
+   //    path: '/images/liam.jpg',
+   //    name: 'liam.jpg',
+   //    component: liam,
+   // },
+   // {
+   //    path: '/images/jsalinas.jpeg',
+   //    name: 'jsalinas.jpeg',
+   //    component: jsalinas,
+   // },
+   // {
+   //    path: '/images/sanchan.jpeg',
+   //    name: 'sanchan.jpeg',
+   //    component: sanchan,
+   // },
 ]
 
 const router = createRouter({
