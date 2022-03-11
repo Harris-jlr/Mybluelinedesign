@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import mydocumentation from '/src/components/mydocumentation.vue'
+import mycodepencontainer from '/src/components/mycodepencontainer.vue'
 
 export default {
-  components: { mydocumentation },
+  components: { mycodepencontainer },
 }
 </script>
 

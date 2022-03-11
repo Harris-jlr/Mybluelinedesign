@@ -1,7 +1,7 @@
 <template>
  <div class="container w-full m-auto">
    <center class="mt-4 mb-4">
-      <h2>NTT Design System</h2>
+      <h2></h2>
    </center>
    <section class="section-tours">
       <div class="flex flex-row row">
@@ -11,35 +11,26 @@
                   <div class="my-flip-inner-wrapper">
                      <div class="my-flip-side my-flip-front">
                         <div class="my-flip-image my-flip-image--1">
-                           <img src="https://therichpost.com/wp-content/uploads/2021/04/flip-1.jpg">                                 
+                           <img src="/assets/component_sample1.png">                                 
                         </div>
                         <div class="my-flip-details">
-                           <h4 class="my-flip-heading">My Flip Title</h4>
+                           <h4 class="my-flip-heading">Sighn in / Sign up component</h4>
                            <div class="my-flip-text">
                               <p>Lorem ipsum dolor sit amet adipisicing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                            </div>
-                           <iframe height="300" style="width: 100%;" scrolling="no" title="Weekly Coding Challenge #1 -  Double slider Sign in/up Form - Desktop Only" src="https://codepen.io/harris-jlr/embed/wvPLwxx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/harris-jlr/pen/wvPLwxx">
-  Weekly Coding Challenge #1 -  Double slider Sign in/up Form - Desktop Only</a> by Judith Harris (<a href="https://codepen.io/harris-jlr">@harris-jlr</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
                         </div>
                      </div>
                      <div class="my-flip-side my-flip-back my-flip-back-1">
                         <div class="my-flip-back-inner">
                            <div class="my-flip-price">
-                              <h3>$129</h3>
+                              <h3>Sign in / Sign up Component</h3>
                            </div>
                            <div class="my-flip-back-text">
-                              <ul>
-                                 <li>All Widgets</li>
-                                 <li>Unlimited Section</li>
-                                 <li>300 Line Icon</li>
-                                 <li>Support 24x7</li>
-                                 <li>Updates for 1 year</li>
-                              </ul>
+                             <iframe height="500" style="width: 100%;" scrolling="no" title="Weekly Coding Challenge #1 -  Double slider Sign in/up Form - Desktop Only" src="https://codepen.io/harris-jlr/embed/wvPLwxx?default-tab=html%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/harris-jlr/pen/wvPLwxx">
+  Double slider Sign in/up Form </a></iframe>
                            </div>
-                           <div class="my-flip-btn-box"><a href="#0" class="my-flip-btn">Book Now</a></div>
+                           
                         </div>
                      </div>
                   </div>
@@ -170,4 +161,9 @@ a:hover{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     color: #000;
  }
+ .my-flip-back-1 {
+    background: linear-gradient(to right bottom, #22b2dd, #1b5cd3);
+    width: 100%;
+    height: 800px;
+}
  </style>

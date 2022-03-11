@@ -7,7 +7,7 @@ import container from '/src/views/container.vue'
 import header from '/src/views/header.vue'
 import demo from '/src/views/demo.vue'
 import documentation from '/src/views/documentation.vue'
-import mycodepencontainer from '/src/views/mycodepencontainer.vue'
+import mycodepen from '/src/views/mycodepen.vue'
 const routes = [
     {
         path: '/',
@@ -50,9 +50,9 @@ const routes = [
       component: documentation,
    },
    {
-      path: '/mycodepencontainer',
-      name: 'mycodepencontainer',
-      component: mycodepencontainer,
+      path: '/mycodepen',
+      name: 'mycodepen',
+      component: mycodepen,
    },
 ]
 

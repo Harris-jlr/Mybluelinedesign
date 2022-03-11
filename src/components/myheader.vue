@@ -165,16 +165,16 @@ const solutions = [
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    name: 'Journey Mapping',
+    description: 'Learn more about your customer Journey for better customer engagement.',
     href: '#',
     icon: CursorClickIcon,
   },
   { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    name: 'Design System',
+    description: "Re-use your web components and create single source of truth for web standards.",
+    href: '/mycodepen',
     icon: ViewGridIcon,
   },
   {
