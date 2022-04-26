@@ -13,6 +13,7 @@
 import myheader from '/src/components/myheader.vue'
 import myfooter from '/src/components/myfooter.vue'
 
+
 export default {
   components: { myheader, myfooter },
 }

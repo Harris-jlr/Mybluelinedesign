@@ -1,6 +1,6 @@
 <template>
 
-  <div class="p-4 m-4 border border-gray-200 rounded ">
+  <div class="p-2 m-2 border border-gray-200 rounded ">
   <mydocumentation /> 
    
   </div>

@@ -1,6 +1,5 @@
 <template>
 
-    <hero2 />
     <grid2 />
    
 
