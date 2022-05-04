@@ -5,6 +5,7 @@ import header from '/src/views/header.vue'
 import demo from '/src/views/demo.vue'
 import documentation from '/src/views/documentation.vue'
 import mycodepen from '/src/views/mycodepen.vue'
+import samples from '/src/views/samplepage.vue'
 const routes = [
     {
         path: '/',
@@ -30,6 +31,11 @@ const routes = [
       path: '/documentation',
       name: 'documentation',
       component: documentation,
+   },
+   {
+      path: '/samples',
+      name: 'samples',
+      component: samples,
    },
    {
       path: '/mycodepen',

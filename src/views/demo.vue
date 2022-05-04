@@ -1,16 +1,14 @@
 <template>
 
-    <pricing />
-    <loader v-if="loading" />
+    <HelloWorld />
 
 </template>
 
 <script>
-import loader from '/src/components/loader.vue'
-import pricing from '/src/components/pricing.vue'
+import HelloWorld from '/src/components/amchart.vue'
 
 export default {
-  components: {loader, pricing },
+  components: {HelloWorld },
 
   name: "app",
         data: () => ({

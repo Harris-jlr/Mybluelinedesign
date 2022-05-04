@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+    
+    body {
+      font: 20px sans-serif;
+    }
+    
+    .group-tick line {
+      stroke: #000;
+    }
+    
+    .ribbons {
+      fill-opacity: 0.67;
+    }
+    
+    </style>
+    <svg width="800" height="800">
+    <defs>
+          <linearGradient id="Gradient1">
+            <stop class="stop1" offset="0%"/>
+            <stop class="stop2" offset="50%"/>
+            <stop class="stop3" offset="100%"/>
+          </linearGradient>
+          <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="red"/>
+            <stop offset="50%" stop-color="black" stop-opacity="0"/>
+            <stop offset="100%" stop-color="blue"/>
+          </linearGradient>
+      </defs>
+    </svg>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+    
+    var matrixData={
+      "Bridgeport, TX":
+      [0, 10,10,10,10,0,0,0,10,10,10,10,10],
+      "Meridian, ID":
+      [70,0,0,0,0,0,30,0,0,0,0,0,0],
+      "Freeport, TX":
+      [40, 0,0,0,0,0,60,0,0,0,0,0],
+      "Frontier, KS": 
+      [60, 0,0,0,0,0,40,0,0,0,0,0,0],
+      "Hockley, TX":
+      [60, 0,0,0,0,0,40,0,0,0,0,0,0],
+      "Jerome, ID":
+      [0, 0,0,0,0,0,100,0,0,0,0,0,0],
+      "RapCity, SD":
+      [0, 10,10,10,10,0,10,0,10,10,10,0,10],
+      "LasVegas, NV":
+      [0, 0,0,0,0,0,80,0,0,0,0,0],
+      "Louisvill, KY":
+      [50, 0,0,0,0,0,50,0,0,0,0,0,0],
+      "Sinco, TX":
+      [40, 0,0,0,0,0,60,0,0,0,0,0,0],
+      "Kinston, NC": 
+      [50, 0,0,0,0,0,50,0,0,0,0,0,0],
+      "Garcity, IA":
+      [90, 0,0,0,0,0,10,0,0,0,0,0,0]
+    }
+    
+    
+    matrix= Object.values(matrixData);
+    matrixKeys = Object.keys(matrixData);
+      
+    var svg = d3.select("svg"),
+        width = +svg.attr("width"),
+        height = +svg.attr("height"),
+        outerRadius = Math.min(width, height) * 0.5 - 150,
+        innerRadius = outerRadius - 30;
+    
+        
+        
+    var formatValue = d3.formatPrefix(",.0", 1e3);
+    
+    var chord = d3.chord()
+        .padAngle(0.024)
+        .sortSubgroups(d3.descending);
+    
+    var arc = d3.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius);
+    
+    var ribbon = d3.ribbon();
+    
+    var color = d3.scaleOrdinal()
+        .domain(d3.range(4))
+        .range(["#6FCDE3", 
+                "#D7DAE5", 
+                "#D7DAE5", 
+                "#D7DAE5", 
+                "#D7DAE5", 
+                "#D7DAE5", 
+                "#E5E52B",
+                "#D7DAE5",
+                "#D7DAE5", 
+                "#D7DAE5", 
+                "#D7DAE5", 
+                "#D7DAE5"
+               ]);
+    
+    var g = svg.append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ") rotate(75)")
+        .datum(chord(matrix));
+    
+    var group = g.append("g")
+        .attr("class", "groups")
+      .selectAll("g")
+      .data(function(chords) { return chords.groups; })
+      .enter().append("g");
+    
+    group.append("path")
+        .style("fill", function(d) { return color(d.index); })
+        .style("stroke", function(d) { return d3.rgb(color(d.index)).darker(); })
+        .attr("d", function(d,i) { 
+            var radius = 0;
+            if(d.index%2 != 0) radius = 50;
+            return arc.innerRadius(innerRadius + radius)
+        .outerRadius(outerRadius + radius)(d);}).on("mouseover", function(d,i) {
+            fade(.1,d);
+        })
+        .on("mouseout", function(d,i) {
+            fade(1,d);
+        });
+    
+    var groupTick = group.selectAll(".group-tick")
+      .data(function(d) { return groupTicks(d, 1e3); })
+      .enter().append("g")
+        .attr("class", "group-tick")
+        .attr("transform", function(d) { 
+          var radius = 0;
+          if(d.index%2 != 0) radius = 50;
+          return "rotate(" + (d.angle * 180 / Math.PI - 75) + 
+            ") translate(" + (outerRadius + radius) + ",2)"; 
+        });
+    
+    groupTick.append("line")
+        .attr("x2", 6);
+    
+    groupTick
+      .filter(function(d) { return d.value % 5e3 === 0; })
+      .append("text")
+        .attr("x", 8)
+        .attr("dy", ".35em")
+        .attr("transform", function(d) { return d.angle > Math.PI/2 && d.angle < Math.PI*3/2 ? "rotate(180) translate(-16)" : null; })
+        .style("text-anchor", function(d) { return d.angle > Math.PI/2 && d.angle < Math.PI*3/2? "end" : null; })
+        .text(function(d) { 
+      return matrixKeys[d.index]; 
+    });
+    
+    g.append("g")
+        .attr("class", "ribbons")
+      .selectAll("path")
+      .data(function(chords) { 
+        return chords; })
+      .enter().append("path")
+        .attr("d", function(d) {
+            if(d.source.index%2 == 0) d.source.radius = innerRadius;
+            else d.source.radius = innerRadius + 50;
+            if(d.target.index%2 == 0) d.target.radius = innerRadius;
+            else d.target.radius = innerRadius + 50;
+            return ribbon(d);
+        })
+        .attr("class", function(d,i) { return matrixKeys[d.index]})
+        .style("fill", function(d) { return color(d.target.index); })
+        .style("stroke", function(d) { return d3.rgb(color(d.target.index)).darker(); });
+    
+            
+        
+    // Returns an array of tick angles and values for a given group and step.
+    function groupTicks(d, step) {
+      var k = (d.endAngle - d.startAngle) / d.value;
+      return d3.range(0, d.value, step).map(function(value) {
+        return {
+          index:d.index,
+          value: value, 
+          angle: value * k + d.startAngle
+        };
+      });
+    }
+    
+    function fade(opacity, d2) {
+                var hightLight = g.selectAll(".ribbons path").filter(function(d) { 
+                    return d.source.index != d2.index && d.target.index != d2.index;
+                });
+                hightLight.transition()
+                        .style("opacity", opacity);
+            }
+    
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
