@@ -29,7 +29,7 @@
   margin: 10px auto;
   text-align: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 1200px;
 }
 
 .highcharts-data-table caption {
@@ -62,20 +62,26 @@
 </head>
 <body>
 
-<div class="bg-gray-900 w-screen h-18 text-md p-2 m-0 text-white shadow-lg z-50" id="trin_header">
-    <div class="box-logo">
-        <a href="/public/samples4trinity.html">
+<!-- our header -->
+ <div class="bg-gray-900 w-screen h-18 text-md p-2 m-0 text-white shadow-lg z-50" id="trin_header">
+  <div class="absolute top-6 right-0 text-right text-white text-md mr-12"><a href="/highchart_sample2.html">Next Sample</a></div>
+  <div class="box-logo">
+        <a href="/samples4trinity.html">
             <img width="215" height="28" src="/assets/trinsightLogo_White.png" alt="TrinityRail" data-lazy-src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="215" height="28" src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" alt="TrinityRail"></noscript>
         </a>
     </div>
 </div>  
 <div class="absolute bottom-0 left-0 min-h-screen w-12 bg-gray-900 -z-50 shadow-lg"></div>
 <div class="px-12">
+
+
     <h1 class="font-bold text-4xl text-blue-900 py-4 px-6 m-2">HIGHCHART SAMPLE</h1>
-    <div class="flex">
+<!-- end of our sample header  --> 
+   <div class="flex">
         <div class="flex flex-wrap flex-row w-full">
             
             <div class="flex flex-col w-4/5 px-4 h-128">
+              <!-- This is our Flex container to show how we can arrange the samples on that page based-->
                 <figure class="highcharts-figure">
                     <div id="container"></div>
                     <p class="highcharts-description">
@@ -85,9 +91,6 @@
                       months as they are hovered over.
                     </p>
                   </figure>
-            </div>
-            <div class="flex flex-col w-1/5 px-4 h-128">
-                <div class="w-100 h-500" id="chartdiv"></div>
             </div>
            
         </div>

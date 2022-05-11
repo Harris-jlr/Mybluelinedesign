@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amchart samples</title>
+  <head>
+    <!-- Step 1 - Include the fusioncharts core library -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- Step 2 - Include the fusion theme -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fusioncharts@3.18.0/fusioncharts.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    #chartdiv,
+    #chartdiv2 {
+      width: 100%;
+      height: 500px;
+    }
+    </style>
+
+</head>
+<body>
+
+<div class="bg-gray-900 w-screen h-18 text-md p-2 m-0 text-white shadow-lg z-50" id="trin_header">
+    <div class="box-logo">
+        <a href="/public/samples4trinity.html">
+            <img width="215" height="28" src="/src/assets/trinsightLogo_White.png" alt="TrinityRail" data-lazy-src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="215" height="28" src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" alt="TrinityRail"></noscript>
+        </a>
+    </div>
+</div>  
+<div class="absolute bottom-0 left-0 min-h-screen w-12 bg-gray-900 -z-50 shadow-lg"></div>
+<div class="px-12">
+    <h1 class="font-bold text-4xl text-blue-900 py-4 px-6 m-2">Fusion Charts</h1>
+    <div class="flex">
+        <div class="flex flex-wrap flex-row w-full">
+            
+            <div class="flex flex-col w-3/5 px-4 h-128">
+                <div class="w-100 h-500" id="chartdiv2"></div>
+            </div>
+            <div class="flex flex-col w-1/5 px-4 h-128">
+                <div class="w-100 h-500" id="chartdiv"></div>
+            </div>
+            <div class="flex flex-col w-1/5 px-4 ">
+            </div>
+        </div>
+    </div>
+</div>
+<Script>
+import FusionCharts from "fusioncharts";
+import Charts from "fusioncharts/fusioncharts.charts";
+import { FCComponent } from "vue-fusioncharts";
+
+// Resolves charts dependency
+Charts(FusionCharts);
+
+const dataSource = {
+  chart: {
+    caption: "Bilateral Trade Volume, 2013",
+    subcaption:
+      "A Horizontal Sankey with options to configure the flow representation",
+    theme: "fusion",
+    orientation: "horizontal",
+    linkalpha: 30,
+    linkhoveralpha: 60,
+    nodelabelposition: "start"
+  },
+  nodes: [
+    {
+      label: "Netherlands"
+    },
+    {
+      label: "Canada"
+    },
+    {
+      label: "Belgium"
+    },
+    {
+      label: "Italy"
+    },
+    {
+      label: "Mexico"
+    },
+    {
+      label: "Russia"
+    },
+    {
+      label: "Spain"
+    },
+    {
+      label: "South Korea"
+    },
+    {
+      label: "Germany"
+    },
+    {
+      label: "China"
+    },
+    {
+      label: "European Union"
+    },
+    {
+      label: "Japan"
+    },
+    {
+      label: "United Kingdom"
+    },
+    {
+      label: "United States"
+    },
+    {
+      label: "France"
+    },
+    {
+      label: "Hong Kong"
+    },
+    {
+      label: "Switzerland"
+    },
+    {
+      label: "Austria"
+    },
+    {
+      label: "Sweden"
+    }
+  ],
+  links: [
+    {
+      from: "Netherlands",
+      to: "European Union",
+      value: 798744
+    },
+    {
+      from: "Germany",
+      to: "European Union",
+      value: 1468990
+    },
+    {
+      from: "European Union",
+      to: "France",
+      value: 745931
+    },
+    {
+      from: "European Union",
+      to: "United States",
+      value: 660541
+    },
+    {
+      from: "Canada",
+      to: "United States",
+      value: 594546
+    },
+    {
+      from: "Belgium",
+      to: "European Union",
+      value: 628796
+    },
+    {
+      from: "China",
+      to: "Hong Kong",
+      value: 400571
+    },
+    {
+      from: "China",
+      to: "United States",
+      value: 526454
+    },
+    {
+      from: "European Union",
+      to: "United Kingdom",
+      value: 520318
+    },
+    {
+      from: "China",
+      to: "European Union",
+      value: 560536
+    },
+    {
+      from: "Italy",
+      to: "European Union",
+      value: 539556
+    },
+    {
+      from: "Mexico",
+      to: "United States",
+      value: 492715
+    },
+    {
+      from: "Russia",
+      to: "European Union",
+      value: 385778
+    },
+    {
+      from: "Spain",
+      to: "European Union",
+      value: 365191
+    },
+    {
+      from: "China",
+      to: "Japan",
+      value: 312062
+    },
+    {
+      from: "European Union",
+      to: "Switzerland",
+      value: 328609
+    },
+    {
+      from: "South Korea",
+      to: "China",
+      value: 229073
+    },
+    {
+      from: "European Union",
+      to: "Austria",
+      value: 244913
+    },
+    {
+      from: "Japan",
+      to: "United States",
+      value: 206091
+    },
+    {
+      from: "European Union",
+      to: "Sweden",
+      value: 204849
+    },
+    {
+      from: "Germany",
+      to: "United States",
+      value: 184287
+    }
+  ]
+};
+
+export default {
+  components: {
+    fusioncharts: FCComponent
+  },
+  data: () => ({
+    type: "sankey",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource
+  })
+};
+</script>
+
+
+</body>
+</html>
