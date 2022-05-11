@@ -23,10 +23,10 @@
             <div class="flex-col h-4/5 w-1/6"> 
               <h1 class="font-bold text-xl">AmCharts</h1>
               <p><a href="/amchart_stepupline.html" class="text-indigo-600 hover:text-indigo-500">step-up Line</a></p>
-              <p><a href="/public/amchart_pipeline_sample.html" class="text-indigo-600 hover:text-indigo-500">Pipeline sample</a></p>
+              <p><a href="/amchart_sample2.html" class="text-indigo-600 hover:text-indigo-500">Sample Bar</a></p>
               <p><a href="/amchart_sample3.html" class="text-indigo-600 hover:text-indigo-500">additional chart</a></p>
               <p><a href="/amchart_sample4.html" class="text-indigo-600 hover:text-indigo-500">filters on the left</a></p>
-              <p><a href="/amchart_chartfeature.html" class="text-indigo-600 hover:text-indigo-500">Chart Features</a></p>
+              <p><a href="/amchart_sample5.html" class="text-indigo-600 hover:text-indigo-500">Pipeline Overview 1</a></p>
               <p><a href="/amchart_sample6.html" class="text-indigo-600 hover:text-indigo-500">Pipeline Overview 2</a></p><p><a href="/amchart_standupsample.html" class="text-indigo-600 hover:text-indigo-500">Sample Bar</a></p>
               
             </div>

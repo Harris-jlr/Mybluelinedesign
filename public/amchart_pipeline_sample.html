@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amchart samples</title>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/flow.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    #chartdiv,
+    #chartdiv2 {
+      width: 100%;
+      height: 500px;
+    }
+    </style>
+
+</head>
+<body>
+
+<div class="bg-gray-900 w-screen h-18 text-md p-2 m-0 text-white shadow-lg z-50" id="trin_header">
+    <div class="box-logo">
+        <a href="/public/samples4trinity.html">
+            <img width="215" height="28" src="/assets/trinsightLogo_White.png" alt="TrinityRail" data-lazy-src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="215" height="28" src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" alt="TrinityRail"></noscript>
+        </a>
+    </div>
+</div>  
+<div class="absolute bottom-0 left-0 min-h-screen w-12 bg-gray-900 -z-50 shadow-lg"></div>
+<div class="px-12">
+    <h1 class="font-bold text-4xl text-blue-900 py-14 px-6 m-2">PIPELINE OVERVIEW</h1>
+    <div class="flex">
+        <div class="flex flex-wrap flex-row w-full">
+            <div class="flex flex-col w-1/5 px-4 ">
+            <ul class="border-2 border-blue-900 text-blue-900 text-lg rounded p-2 m-2">
+                <h1 class="text-center text-lg font-bold">Filter Section </h1>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                <li class="border-2 border-blue-400 text-blue-600 text-lg rounded p-2 m-2"> Testing Filters</li>
+                
+            </ul>
+            </div>
+            <div class="flex flex-col w-3/5 px-4 h-128">
+                <div class="w-100 h-500" id="chartdiv2"></div>
+            </div>
+            <div class="flex flex-col w-1/5 px-4 h-128">
+                <div class="w-100 h-500" id="chartdiv"></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<Script>
+
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+var root = am5.Root.new("chartdiv2");
+
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+root.setThemes([
+ am5themes_Animated.new(root)
+]);
+
+
+// Create chart
+// https://www.amcharts.com/docs/v5/charts/xy-chart/
+var chart = root.container.children.push(am5xy.XYChart.new(root, {
+ panX: false,
+ panY: false,
+ wheelX: "panX",
+ wheelY: "zoomX",
+ layout: root.verticalLayout
+}));
+
+
+// Add legend
+// https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
+var legend = chart.children.push(
+ am5.Legend.new(root, {
+   centerX: am5.p50,
+   x: am5.p50
+ })
+);
+
+var data = [{
+ "year": "2021",
+ "europe": 2.5,
+ "namerica": 2.5,
+ "asia": 2.1,
+ "lamerica": 1,
+ "meast": 0.8,
+ "africa": 0.4
+}, {
+ "year": "2022",
+ "europe": 2.6,
+ "namerica": 2.7,
+ "asia": 2.2,
+ "lamerica": 0.5,
+ "meast": 0.4,
+ "africa": 0.3
+}, {
+ "year": "2023",
+ "europe": 2.8,
+ "namerica": 2.9,
+ "asia": 2.4,
+ "lamerica": 0.3,
+ "meast": 0.9,
+ "africa": 0.5
+}]
+
+
+// Create axes
+// https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+ categoryField: "year",
+ renderer: am5xy.AxisRendererX.new(root, {
+   cellStartLocation: 0.1,
+   cellEndLocation: 0.9
+ }),
+ tooltip: am5.Tooltip.new(root, {})
+}));
+
+xAxis.data.setAll(data);
+
+var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+ renderer: am5xy.AxisRendererY.new(root, {})
+}));
+
+
+// Add series
+// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+function makeSeries(name, fieldName) {
+ var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+   name: name,
+   xAxis: xAxis,
+   yAxis: yAxis,
+   valueYField: fieldName,
+   categoryXField: "year"
+ }));
+
+ series.columns.template.setAll({
+   tooltipText: "{name}, {categoryX}:{valueY}",
+   width: am5.percent(90),
+   tooltipY: 0
+ });
+
+ series.data.setAll(data);
+
+ // Make stuff animate on load
+ // https://www.amcharts.com/docs/v5/concepts/animations/
+ series.appear();
+
+ series.bullets.push(function () {
+   return am5.Bullet.new(root, {
+     locationY: 0,
+     sprite: am5.Label.new(root, {
+       text: "{valueY}",
+       fill: root.interfaceColors.get("alternativeText"),
+       centerY: 0,
+       centerX: am5.p50,
+       populateText: true
+     })
+   });
+ });
+
+ legend.data.push(series);
+}
+
+makeSeries("Europe", "europe");
+makeSeries("North America", "namerica");
+makeSeries("Asia", "asia");
+makeSeries("Latin America", "lamerica");
+makeSeries("Middle East", "meast");
+makeSeries("Africa", "africa");
+
+
+// Make stuff animate on load
+// https://www.amcharts.com/docs/v5/concepts/animations/
+chart.appear(1000, 100);
+</script>
+
+<script>
+  
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+var root = am5.Root.new("chartdiv");
+
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+
+// Create series
+// https://www.amcharts.com/docs/v5/charts/flow-charts/
+var series = root.container.children.push(am5flow.Chord.new(root, {
+  sourceIdField: "source",
+  targetIdField: "target",
+  valueField: "value"
+}));
+series.nodes.get("colors").set("step", 2);
+
+
+// Set data
+// https://www.amcharts.com/docs/v5/charts/flow-charts/#Setting_data
+series.data.setAll([
+  { source: "Berlin", target: "Amsterdam", value: 14 },
+  { source: "Berlin", target: "London", value: 33 },
+  { source: "Berlin", target: "Paris", value: 13 },
+  { source: "Berlin", target: "Madrid", value: 36 },
+
+  { source: "Amsterdam", target: "Berlin", value: 42 },
+  { source: "Amsterdam", target: "London", value: 20 },
+  { source: "Amsterdam", target: "Paris", value: 19 },
+  { source: "Amsterdam", target: "Madrid", value: 11 },
+
+  { source: "London", target: "Amsterdam", value: 9 },
+  { source: "London", target: "Berlin", value: 38 },
+  { source: "London", target: "Paris", value: 41 },
+  { source: "London", target: "Madrid", value: 16 },
+
+  { source: "Paris", target: "Amsterdam", value: 12 },
+  { source: "Paris", target: "London", value: 16 },
+  { source: "Paris", target: "Berlin", value: 21 },
+  { source: "Paris", target: "Madrid", value: 8 },
+
+  { source: "Madrid", target: "Amsterdam", value: 22 },
+  { source: "Madrid", target: "London", value: 25 },
+  { source: "Madrid", target: "Paris", value: 19 },
+  { source: "Madrid", target: "Berlin", value: 7 }
+]);
+
+
+// Make stuff animate on load
+series.appear(1000, 100);
+</script>
+
+</body>
+</html>

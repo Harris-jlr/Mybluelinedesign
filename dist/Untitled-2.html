@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sample table layout from anychart</h1>
+    <div class="flex p-4"> 
+      <div class="flex flex-row w-full h-screen">
+          <div class="flex flex-col w-2/12 h-4/5">
+              
+          </div>
+          <div class="flex flex-col w-10/12 h-4/5">
+              <div class="w-64 h-full" id="container"></div>
+          </div>
+      </div>
+  </div>
+
+    <script>
+        anychart.onDocumentReady(function () {
+
+        // set stage
+        var stage = anychart.graphics.create("container");
+
+        // create table
+        var table = anychart.standalones.table();
+
+        // create charts
+        //chart1
+        var data = [
+        {x: "A", value: 637166},
+        {x: "B", value: 721630},
+        {x: "C", value: 148662},
+        {x: "D", value: 78662},
+        {x: "E", value: 90000}
+        ];
+        var chart = anychart.pie(data);
+        chart.legend(false);
+
+        //chart2
+        // create data
+        data = [
+        ["John", 10000],
+        ["Jake", 12000],
+        ["Peter", 13000],
+        ["James", 10000],
+        ["Mary", 9000]
+        ];
+        var chart2 = anychart.column();
+        var series = chart2.column(data);
+
+        //chart3
+        var data = [
+        {x: "2010", y: "A", heat: 15},
+        {x: "2011", y: "A", heat: 17},
+        {x: "2012", y: "A", heat: 21},
+        {x: "2010", y: "B", heat: 34},
+        {x: "2011", y: "B", heat: 33},
+        {x: "2012", y: "B", heat: 32},
+        {x: "2010", y: "C", heat: 51},
+        {x: "2011", y: "C", heat: 50},
+        {x: "2012", y: "C", heat: 47}
+        ];
+        var chart3 = anychart.heatMap(data);
+
+        //chart4
+        data = [
+        ["Strength", 8],
+        ["Dexterity", 14],
+        ["Concentration", 14],
+        ["Intelligence", 15],
+        ["Wisdom", 12],
+        ["Charisma", 8]
+        ];
+        var chart4 = anychart.polar();
+        series = chart4.polygon(data);
+        chart4.xScale("ordinal");
+        chart4.sortPointsByX(true);
+        chart4.innerRadius(50);
+
+        //chart5
+        data = [
+        {from: "Canada",  to: "France",  weight:  2230000},
+        {from: "Canada",  to: "Germany", weight:  1990000},
+        {from: "Canada",  to: "Italy",   weight:  1180000},
+        {from: "Canada",  to: "Spain",   weight:   990000},
+        {from: "USA",     to: "France",  weight:   950000},
+        {from: "USA",     to: "Germany", weight:  2020000},
+        {from: "USA",     to: "Spain",   weight:  1110000}
+        ];
+        var chart5 = anychart.sankey(data);
+        chart5.nodeWidth("30%");
+
+        //chart6
+        data = [
+        {x: "January", value: 10000},
+        {x: "February", value: 12000},
+        {x: "March", value: 18000},
+        {x: "April", value: 11000},
+        {x: "May", value: 9000}
+        ];
+        var chart6 = anychart.column3d();
+        series = chart6.column(data);
+
+        // set table content
+        table.contents([
+        [
+            chart,
+            chart2,
+            chart3
+        ],[
+            chart4,
+            chart5,
+            chart6
+        ]
+        ]);
+
+        table.container(stage).draw();
+        });
+    </script>
+</body>
+</html>

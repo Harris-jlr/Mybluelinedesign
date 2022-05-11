@@ -13,6 +13,15 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
   <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4" rel="stylesheet" type="text/css">
+  <style>html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}</style>
+ </head>
+ <body>
+  <div id="container"></div>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-table.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
@@ -21,26 +30,6 @@
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-polar.min.js"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-sankey.min.js"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-cartesian-3d.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>html, body, #container {
-    width: 100%;
-    height: 80vh;
-    margin: 0;
-    padding: 0;
-}</style>
- </head>
- <body>
-  <div class="bg-gray-900 w-screen h-18 text-md p-2 m-0 text-white shadow-lg z-50" id="trin_header">
-    <div class="box-logo">
-        <a href="/public/samples4trinity.html">
-            <img width="215" height="28" src="/assets/trinsightLogo_White.png" alt="TrinityRail" data-lazy-src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="215" height="28" src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" alt="TrinityRail"></noscript>
-        </a>
-    </div>
-</div>  
-<div class="absolute bottom-0 left-0 min-h-screen w-12 bg-gray-900 -z-50 shadow-lg"></div>
-<div class="px-14 py-4">
-  <div id="container"></div>
-  </div>
   <script type="text/javascript">anychart.onDocumentReady(function () {
 
   // set stage
@@ -64,26 +53,26 @@
   //chart2
   // create data
   data = [
-    ["April", 10000],
-    ["May", 12000],
-    ["June", 13000],
-    ["July", 10000],
-    ["August", 9000]
+    ["John", 10000],
+    ["Jake", 12000],
+    ["Peter", 13000],
+    ["James", 10000],
+    ["Mary", 9000]
   ];
   var chart2 = anychart.column();
   var series = chart2.column(data);
 
   //chart3
   var data = [
-    {x: "2020", y: "A", heat: 15},
-    {x: "2021", y: "A", heat: 17},
-    {x: "2022", y: "A", heat: 21},
-    {x: "2020", y: "B", heat: 34},
-    {x: "2021", y: "B", heat: 33},
-    {x: "2022", y: "B", heat: 32},
-    {x: "2020", y: "C", heat: 51},
-    {x: "2021", y: "C", heat: 50},
-    {x: "2022", y: "C", heat: 47}
+    {x: "2010", y: "A", heat: 15},
+    {x: "2011", y: "A", heat: 17},
+    {x: "2012", y: "A", heat: 21},
+    {x: "2010", y: "B", heat: 34},
+    {x: "2011", y: "B", heat: 33},
+    {x: "2012", y: "B", heat: 32},
+    {x: "2010", y: "C", heat: 51},
+    {x: "2011", y: "C", heat: 50},
+    {x: "2012", y: "C", heat: 47}
   ];
   var chart3 = anychart.heatMap(data);
 
@@ -104,13 +93,13 @@
 
   //chart5
   data = [
-    {from: "Texas",  to: "Alabama",  weight:  2230000},
-    {from: "Texas",  to: "Florida", weight:  1990000},
-    {from: "Texas",  to: "California",   weight:  1180000},
-    {from: "Texas",  to: "Virgina",   weight:   990000},
-    {from: "New York",     to: "Alabama",  weight:   950000},
-    {from: "New York",     to: "Florida", weight:  2020000},
-    {from: "New York",     to: "Virgina",   weight:  1110000}
+    {from: "Canada",  to: "France",  weight:  2230000},
+    {from: "Canada",  to: "Germany", weight:  1990000},
+    {from: "Canada",  to: "Italy",   weight:  1180000},
+    {from: "Canada",  to: "Spain",   weight:   990000},
+    {from: "USA",     to: "France",  weight:   950000},
+    {from: "USA",     to: "Germany", weight:  2020000},
+    {from: "USA",     to: "Spain",   weight:  1110000}
   ];
   var chart5 = anychart.sankey(data);
   chart5.nodeWidth("30%");

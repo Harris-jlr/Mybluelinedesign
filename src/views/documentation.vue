@@ -1,19 +1,15 @@
 <template>
 
-  <div class="p-2 m-2 border border-gray-200 rounded ">
-  <mydocumentation /> 
+    <grid2 />
    
-  </div>
 
 </template>
 
 <script>
-import mydocumentation from '/src/components/mydocumentation.vue'
+import grid2 from '/src/components/grid2.vue'
+import hero2 from '/src/components/hero2.vue'
 
 export default {
-  components: { mydocumentation },
+  components: { hero2, grid2 },
 }
 </script>
-
-<style>
-</style>

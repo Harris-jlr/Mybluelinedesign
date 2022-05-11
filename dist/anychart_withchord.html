@@ -8,30 +8,27 @@
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+     <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-graph.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
-    <div class="bg-gray-900 w-screen h-18 text-md p-2 m-0 text-white shadow-lg z-50" id="trin_header">
-        <div class="box-logo">
-            <a href="/public/samples4trinity.html">
-                <img width="215" height="28" src="/src/assets/trinsightLogo_White.png" alt="TrinityRail" data-lazy-src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="215" height="28" src="https://www.trinityrail.com/wp-content/themes/trinrail/images/trinityrail-logo.svg" alt="TrinityRail"></noscript>
-            </a>
-        </div>
-    </div>  
-    <div class="absolute bottom-0 left-0 min-h-screen w-12 bg-gray-900 -z-50 shadow-lg"></div>
-    <div class="px-12">
-      <h1 class="font-bold text-4xl text-blue-900 py-4 px-6 m-2">Anychart Samples</h1>
+      <h1>Sample Anychart Section</h1>
       <div class="flex p-4"> 
         <div class="flex flex-row w-full h-screen">
-            <div class="flex flex-col w-2/3 h-4/5">
+            <div class="flex flex-col w-3/5 h-4/5">
                 <div class="w-full h-full" id="container1"></div>
             </div>
-            <div class="flex flex-col w-1/3 h-4/5">
-                <div class="w-64 h-full" id="container"></div>
+            <div class="flex flex-col w-2/5 h-4/5">
+                <div  class="w-full h-full" id="container"></div>
             </div>
         </div>
-    </div>
     </div>
 
     <script>
@@ -98,21 +95,43 @@
         chart.draw();
         });
     </script>
-    <script>
-        anychart.onDocumentReady(function () {
-    // Creates Pie chart.
-    var chart = anychart.pie([
-        {x: 'Tx', value: 637166},
-        {x: 'Ca', value: 721630},
-        {x: 'Az', value: 148662},
-        {x: 'Fl', value: 78662},
-        {x: 'Ky', value: 90000}
-    ]);
+   <script>
+var chart;
+anychart.onDocumentReady(function () {
+  anychart.data.loadJsonFile(
+    // The data used in this sample can be obtained from the CDN
+    'radial-graph-data.json',
+    function (data) {
+      // create graph chart
+      chart = anychart.graph(data);
 
-    chart.title('Railcar Desitinations');
-    chart.container('container');
-    chart.draw();
+      // set chart layout settings
+      chart.layout({ iterationCount: 0 });
+
+      // set node labels settings
+      chart
+        .nodes()
+        .labels()
+        .fontSize(12)
+        .enabled(true)
+        .anchor('auto')
+        .autoRotate(true);
+
+      // set container id for the chart
+      chart.container('container');
+      // initiate chart drawing
+      chart.draw();
+
+      // set default zoom
+      chart.zoom(
+        0.68,
+        chart.getPixelBounds().width / 2,
+        chart.getPixelBounds().height / 2
+      );
+    }
+  );
 });
-    </script>
+
+   </script>
 </body>
 </html>
