@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import PlanetChart from '/src/components/PlanetChart.vue'
+import PlanetChart from '/src/components/planetChart.vue'
 
 export default {
   name: 'App',
