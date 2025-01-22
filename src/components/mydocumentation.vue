@@ -8,7 +8,7 @@
         <div class="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
       </div>
       <div class="relative max-w-7xl mx-auto pb-20 px-4 sm:py-18 sm:px-6 lg:px-8">
-        <img class="max-w-lg" src="/src/assets/trinsightLogo_white.png" alt="" >
+        <img class="max-w-lg" src="/src/assets/trinsightLogo_White.png" alt="" >
         <p class="mt-2 max-w-5xl text-xl text-gray-300">Manage your traffic more efficiently by gaining actionable insight into your fleet and freight.  With this application, you will optimize your entire supply chain.  To see more details, take a moment to view  
          <a href="/promo" class="text-base font-medium text-yellow-700 hover:text-cyan-600" target="blank">TRINSIGHT<span aria-hidden="true"> &rarr;</span></a></p>
       </div>
