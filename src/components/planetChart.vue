@@ -10,7 +10,7 @@ import Chart from 'chart.js'
 import planetChartData from '../planet-data.js'
 
 export default {
-  name: 'PlanetChart',
+  name: 'planetChart',
   data() {
     return {
       planetChartData: planetChartData

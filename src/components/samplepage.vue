@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import PlanetChart from '/src/components/PlanetChart.vue'
+import PlanetChart from '/src/components/planetChart.vue'
 import SideChart from '/src/components/SideChart.vue'
 import ContactCard from '/src/components/contactcard.vue'
 

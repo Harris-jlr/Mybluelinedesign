@@ -37,7 +37,7 @@
 
 <script>
 import { NewspaperIcon, PhoneIcon, SupportIcon } from '@heroicons/vue/outline'
-import PlanetChart from '/src/components/PlanetChart.vue'
+import PlanetChart from '/src/components/planetChart.vue'
 
 const supportLinks = [
   {
