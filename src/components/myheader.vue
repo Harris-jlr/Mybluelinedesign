@@ -2,7 +2,7 @@
   <Popover class="relative bg-white">
     <div class="flex justify-between items-center px-4 pt-4  pb-0 sm:px-6 md:justify-start md:space-x-10">
       <div>
-           <img class="w-48" src="/src/assets/trinityrail.png" alt="" >
+           <img class="w-24" src="/src/assets/light1.png" alt="" >
       </div>
       <div class="-mr-2 -my-2 md:hidden">
         <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -87,7 +87,7 @@
               </a>
             </div>
             <div class="mt-6">
-              <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Sign up </a>
+              <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-500 hover:bg-indigo-700"> Sign up </a>
               <p class="mt-6 text-center text-base font-medium text-gray-500">
                 Existing customer?
                 {{ ' ' }}

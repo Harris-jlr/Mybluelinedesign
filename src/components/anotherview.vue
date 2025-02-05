@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-900 py-6 flex items-center justify-center">
-    <div class="max-w-4xl bg-gray-800 text-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
+  <div class="bg-gray-900 flex items-center justify-center">
+    <div class="max-w-6xl mt-6 bg-gray-900 text-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">
       <!-- Profile Image -->
-      <div class="w-full md:w-1/3 bg-cover bg-center" style="background-image: url('/assets/judyharris.1380485c.jpg');"></div>
+      <div class="w-full  md:w-1/3 bg-cover bg-center" style="background-image: url('/assets/IMG_6546.jpg');"></div>
 
       <!-- Content -->
       <div class="p-6 flex-1">

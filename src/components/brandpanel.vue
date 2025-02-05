@@ -17,7 +17,7 @@
 <template>
   <div class="relative py-16 bg-white">
     <div class="hidden absolute top-0 inset-x-0 h-1/2 bg-gray-50 lg:block" aria-hidden="true" />
-    <div class="max-w-7xl mx-auto bg-indigo-600 lg:bg-transparent lg:px-8">
+    <div class="max-w-7xl mx-auto bg-sky-500 lg:bg-transparent lg:px-8">
       <div class="lg:grid lg:grid-cols-12">
         <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
           <div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="relative bg-indigo-600 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+        <div class="relative bg-sky-500 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
           <div class="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block" aria-hidden="true">
             <svg class="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
               <defs>

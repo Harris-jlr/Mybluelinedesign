@@ -5,7 +5,7 @@
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-4 lg:px-4 ">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
-          <p class="text-base text-gray-400 xl:text-center">&copy; 2022 Trinityrail, Inc. All rights reserved.</p>
+          <p class="text-base text-gray-400 xl:text-center">&copy; 2025 Blueline Design,llc. All rights reserved.</p>
         </div>
         <div class="mt-2 mb-6 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
           <div class="md:grid md:grid-cols-1 md:gap-8">

@@ -81,7 +81,7 @@
         </PopoverGroup>
         <div class="flex items-center md:ml-12">
           <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a>
-          <a href="#" class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Sign up </a>
+          <a href="#" class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-500 hover:bg-indigo-700"> Sign up </a>
         </div>
       </div>
     </div>
@@ -126,7 +126,7 @@
               </a>
             </div>
             <div class="mt-6">
-              <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Sign up </a>
+              <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-500 hover:bg-indigo-700"> Sign up </a>
               <p class="mt-6 text-center text-base font-medium text-gray-500">
                 Existing customer?
                 {{ ' ' }}
