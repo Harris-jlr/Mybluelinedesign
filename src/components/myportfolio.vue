@@ -42,7 +42,7 @@ myportfolio.vue
     <section class="text-center my-12">
       <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
       <p>Email me at: 
-        <a href="mailto:judith.harris@nttdata.com" class="text-blue-600 hover:underline">
+        <a href="mailto:jharris@bluelinedesign.org" class="text-blue-600 hover:underline">
           jharris@bluelinedesign.org
         </a>
       </p>
