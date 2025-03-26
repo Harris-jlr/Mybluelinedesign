@@ -1,7 +1,31 @@
 <template>
   <div class="bg-gray-900 ">
     <div class="text-gray-100 px-6 py-10 max-w-7xl mx-auto space-y-16">
-    <!-- Who We Are -->
+     <!-- Meet the Team -->
+     <section class="bg-gray-900 text-white py-12 px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Meet the Team</h2>
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 justify-items-center">
+          <div
+          v-for="member in bios"
+          :key="member.name"
+          class="text-center max-w-xs"
+          >
+          <img
+          :src="member.image"
+          alt="member.name"
+          class="w-32 aspect-square rounded-full mx-auto mb-4 border-4 border-blue-500 shadow-md object-cover object-top transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]"
+          />
+
+
+           <h3 class="text-xl font-semibold">{{ member.name }}</h3>
+           <p class="text-sm text-blue-400 font-medium mb-2">{{ member.title }}</p>
+           <p class="text-sm text-gray-300">{{ member.bio }}</p>
+          </div>
+        </div>
+      </section>
+    
+    
+      <!-- Who We Are -->
     <section>
       <h2 class="text-3xl font-bold text-white mb-4">Who We Are</h2>
       <p class="mb-4">
@@ -27,28 +51,7 @@
       </ul>
     </section>
 
-    <!-- Meet the Team -->
-    <section class="bg-gray-900 text-white py-12 px-6">
-      <h2 class="text-3xl font-bold text-center mb-10">Meet the Team</h2>
-      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 justify-items-center">
-          <div
-          v-for="member in bios"
-          :key="member.name"
-          class="text-center max-w-xs"
-          >
-          <img
-          :src="member.image"
-          alt="member.name"
-          class="w-32 aspect-square rounded-full mx-auto mb-4 border-4 border-blue-500 shadow-md object-cover object-top transition duration-300 ease-in-out hover:scale-105 hover:-rotate-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]"
-          />
-
-
-          <h3 class="text-xl font-semibold">{{ member.name }}</h3>
-          <p class="text-sm text-blue-400 font-medium mb-2">{{ member.title }}</p>
-          <p class="text-sm text-gray-300">{{ member.bio }}</p>
-      </div>
-      </div>
-  </section>
+   
   </div>
   </div>
 </template>
