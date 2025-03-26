@@ -2,8 +2,8 @@ import { createRouter , createWebHistory } from 'vue-router'
 import home from '/src/views/home.vue'
 import about from '/src/views/about.vue'
 import header from '/src/views/header.vue'
-import demo from '/src/views/demo.vue'
-import documentation from '/src/views/documentation.vue'
+import OurServices from '../components/OurServices.vue'
+import aboutbld from '/src/views/aboutbld.vue'
 import mycodepen from '/src/views/mycodepen.vue'
 import samples from '/src/views/samplepage.vue'
 import promo from '/src/views/promo.vue'
@@ -23,15 +23,11 @@ const routes = [
       name: 'header',
       component: header,
    },
+   
    {
-      path: '/demo',
-      name: 'demo',
-      component: demo,
-   },
-   {
-      path: '/documentation',
-      name: 'documentation',
-      component: documentation,
+      path: '/aboutbld',
+      name: 'aboutbld',
+      component: aboutbld,
    },
    {
       path: '/samples',
@@ -47,6 +43,11 @@ const routes = [
       path: '/promo',
       name: 'promo',
       component: promo,
+   },
+   {
+      path: '/OurServices',
+      name: 'OurServices',
+      component: OurServices,
    },
 ]
 

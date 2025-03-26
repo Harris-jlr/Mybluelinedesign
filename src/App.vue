@@ -1,23 +1,21 @@
 <template>
+  <div class="flex flex-col min-h-screen">
+    <myheader />
 
-  <div class="w-full mx-px center">
-     <myheader />
-     <router-view />
-     <myfooter />
+    <!-- Main content expands to push footer down -->
+    <main class="flex-grow w-full mx-auto">
+      <router-view />
+    </main>
+
+    <myfooter />
   </div>
-  
-
 </template>
 
 <script>
 import myheader from '/src/components/myheader.vue'
 import myfooter from '/src/components/myfooter.vue'
 
-
 export default {
   components: { myheader, myfooter },
 }
 </script>
-
-<style>
-</style>

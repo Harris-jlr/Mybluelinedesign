@@ -1,8 +1,6 @@
 // About.vue
-<template>
-       
-        <aboutus />
-    
+<template>     
+        <aboutus /> 
 </template>
 
 

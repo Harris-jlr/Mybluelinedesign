@@ -33,42 +33,43 @@ import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@her
 
 const features = [
   {
-    name: 'AnyChart',
+    name: 'Consultation & Strategy',
     description:
-      'Flexible JavaScript (HTML5) based solution that allows you to create interactive charts that are cross-browser and cross-platform charting solution.  Ideal for everybody who needs dashboards, reporting, analytics, statistical, financial or any other data visualization solutions.',
+      'Expert guidance on tech stack selection, architecture planning, and project feasibility to ensure smart, scalable starts.',
     icon: GlobeAltIcon,
   },
   {
-    name: 'Charts.js',
+    name: 'Discovery Workshops',
     description:
-      'Is a free JavaScript library for making HTML-based charts. It is one of the simplest visualization libraries for JavaScript, and comes with 9 standard chart types that can be customized.',
-    icon: ScaleIcon,
-  },
-  {
-    name: 'Highcharts',
-    description:
-      'Highcharts is a software library for charting written in pure JavaScript, first released in 2009. The license is proprietary. It is free for personal/non-commercial uses and paid for commercial applications.',
-    icon: LightningBoltIcon,
-  },
-  {
-    name: 'FusionCharts',
-    description:
-      'FusionCharts is the most comprehensive JavaScript charting library, with over 100+ charts and 2000+ maps. Integrated with all popular JavaScript frameworks and server-side programming languages and It is now Open Source under the GPL and MIT Licenses. ',
+      'We facilitate collaborative sessions to define goals, surface risks, align teams, and create actionable project roadmaps.',
     icon: AnnotationIcon,
   },
   {
-    name: 'AmCharts',
+    name: 'Rapid Prototyping',
     description:
-      'AmCharts is an advanced charting library that will suit any data visualization need. You will have to work around thier logo on the free version.  Their charting solution includes Column, Bar, Line, Area, Step, Step without risers, Smoothed line, Candlestick, OHLC, Pie/Donut, Radar/ Polar, XY/Scatter/Bubble, Bullet, Funnel/Pyramid charts and you an open them in code pen and grab the code directly for your project.',
+      'Low-fidelity or functional prototypes built quickly to validate ideas, gather feedback, and accelerate product vision.',
+    icon: LightningBoltIcon,
+  },
+  {
+    name: 'Front-End Architecture',
+    description:
+      'Modern, scalable UI foundations using frameworks like Vue, Vite, and Tailwind for fast, maintainable code.',
+    icon: ScaleIcon,
+  },
+  {
+    name: 'Accessible UX/UI Design',
+    description:
+      'Design systems and interfaces crafted for usability, accessibility, and clean handoff to dev — beautiful and usable.',
     icon: GlobeAltIcon,
   },
   {
-    name: 'D3.js',
+    name: 'Data Visualization',
     description:
-      'This library has you declaring axes from scratch and creating the SVG before you can plot the actual chart.  It has a high learning curve and most of your time will be spent learning how to create the chart but once you do you will have a complete control one what it does and what it looks like.',
-    icon: ScaleIcon,
+      'Custom dashboards and interactive charts using D3, Chart.js, or Tableau to make data understandable and actionable.',
+    icon: AnnotationIcon,
   },
 ]
+
 
 export default {
   setup() {
