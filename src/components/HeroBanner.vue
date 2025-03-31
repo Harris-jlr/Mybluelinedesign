@@ -5,7 +5,14 @@
   
       <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
         <!-- Left Side: Text Content -->
-        <div class="space-y-6">
+         
+      <img
+            src="../assets/mainblur.png"
+            alt="Hero Visual"
+            class="absolute right-0 max-w-2xl w-auto h-full object-cover"
+        />  
+        
+        <div class="space-y-6 z-10">
           <p class="text-blue-400 uppercase tracking-wide font-semibold">// Changing the way we do business</p>
           <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
             Humanity First
@@ -29,11 +36,7 @@
         <!-- Right Side: Image -->
         <div class="relative flex justify-end">
         <div class="absolute -left-20 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-blue-500 opacity-20 blur-3xl z-0"></div>
-        <img
-            src="../assets/hero-visual.png"
-            alt="Hero Visual"
-            class="relative z-10 max-w-md w-full h-auto object-contain"
-        />
+       
         </div>
         </div>
     
