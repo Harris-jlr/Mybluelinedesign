@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-gradient-to-b from-white to-slate-100 pb-40 px-6 relative overflow-hidden">
+    <section class="pl-12 pr-6 relative overflow-hidden">
       <!-- Soft Blueprint Background -->
       <div class="absolute inset-0 opacity-5 pointer-events-none bg-[url('/images/blueprint-grid.svg')] bg-center bg-cover"></div>
   

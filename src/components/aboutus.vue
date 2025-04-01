@@ -4,7 +4,8 @@
      <!-- Meet the Team -->
      <section class="bg-gray-900 text-white py-12 px-6">
       <h2 class="text-3xl font-bold text-center mb-10">Meet the Team</h2>
-        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 justify-items-center">
+      <div class="flex flex-wrap justify-center gap-10">
+
           <div
           v-for="member in bios"
           :key="member.name"
@@ -66,6 +67,8 @@ import AdamImg from '../assets/team/AdamN.png'
 import JustinImg from '../assets/team/JustinP.png'
 import BradleyImg from '../assets/team/BradleyL.png'
 import CassidyImg from '../assets/team/CassidyS.png'
+import philImg from '../assets/team/PhilM.png'
+// import TomImg from '../assets/team/TomB.png'
 
 const bios = [
 {
@@ -81,6 +84,12 @@ const bios = [
   bio: 'Empathetic leader and powerhouse architect with deep roots in front end, backend, and security. Mentors hard. Innovates harder.'
 },
 {
+  name: 'Phil Morehead',
+  title: 'Chief Product Officer',
+  image: philImg,
+  bio: 'Phil bridges strategy and execution with calm clarity, translating ideas into impactful features that keep teams aligned and products moving forward.'
+},
+{
   name: 'Derek Roode',
   title: 'Solutions Architect',
   image: DerekImg,
@@ -92,6 +101,12 @@ const bios = [
   image: JoeImg,
   bio: 'Focused on building clean, responsive UI with accessibility in mind. Quietly brilliant, endlessly dependable.'
 },
+/* {
+  name: 'Thomas Bosworth',
+  title: 'Front-End Developer',
+  image: TomImg,
+  bio: 'Curious, collaborative, and always up for a challenge. Thomas brings years of real-world experience and a love of clean, efficient UI.'
+}, */
 {
   name: 'Adam Noveskey',
   title: 'Front-End Developer',
