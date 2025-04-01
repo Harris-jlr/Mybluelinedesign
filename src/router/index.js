@@ -7,6 +7,8 @@ import aboutbld from '/src/views/aboutbld.vue'
 import mycodepen from '/src/views/mycodepen.vue'
 import samples from '/src/views/samplepage.vue'
 import promo from '/src/views/promo.vue'
+import Investorcta from '../components/investorcta.vue'
+
 const routes = [
     {
         path: '/',
@@ -48,6 +50,11 @@ const routes = [
       path: '/OurServices',
       name: 'OurServices',
       component: OurServices,
+   },
+   {
+      path: '/investors',
+      name: 'investors',
+      component: Investorcta,
    },
 ]
 
