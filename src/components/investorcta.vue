@@ -28,7 +28,8 @@
         </p>
         <!-- Placeholder for cards -->
         <div class="text-gray-800">
-         <InvestorCards />
+     
+         <BetterCards />
         </div>
       </section>
   
@@ -37,15 +38,24 @@
         <h2 class="text-3xl font-semibold mb-4">Let’s Talk</h2>
         <p class="mb-6 text-lg">Ready to connect about investment or partnership? Reach out and let’s start a conversation.</p>
         <button class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-full transition">
-          Contact Us
+            <a
+            href="mailto:contactus@bluelinedesign.org"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-full transition"
+            >
+            Contact Us
+            </a>
+
         </button>
       </section>
     </div>
   </template>
   
-  <script setup>
-import InvestorCards from './InvestorCards.vue';
+  <script>
+import BetterCards from './BetterCards.vue';
 
+export default {
+  components: { BetterCards },
+}
   // Placeholder for future enhancements like modal, routing, or form logic
   </script>
   

@@ -8,7 +8,7 @@ import mycodepen from '/src/views/mycodepen.vue'
 import samples from '/src/views/samplepage.vue'
 import promo from '/src/views/promo.vue'
 import Investorcta from '../components/investorcta.vue'
-
+import InvestorDetail from '../views/InvestorDetail.vue'
 const routes = [
     {
         path: '/',
@@ -56,6 +56,11 @@ const routes = [
       name: 'investors',
       component: Investorcta,
    },
+   {
+      path: '/investors/:slug',
+      name: 'InvestorDetail',
+      component: InvestorDetail,
+    }    
 ]
 
 const router = createRouter({
