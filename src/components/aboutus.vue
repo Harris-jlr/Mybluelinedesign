@@ -4,7 +4,7 @@
      <!-- Meet the Team -->
      <section class="bg-gray-900 text-white py-12 px-6">
       <h2 class="text-3xl font-bold text-center mb-10">Meet the Team</h2>
-      <div class="flex flex-wrap justify-center gap-10">
+      <div class="flex flex-wrap justify-center gap-6">
 
           <div
           v-for="member in bios"
