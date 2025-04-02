@@ -1,9 +1,9 @@
 <template>
-    <section class="pl-12 pr-6 relative overflow-hidden">
+    <section class="sm:pl-12 sm:pr-6 relative overflow-hidden">
       <!-- Soft Blueprint Background -->
       <div class="absolute inset-0 opacity-5 pointer-events-none bg-[url('/images/blueprint-grid.svg')] bg-center bg-cover"></div>
   
-      <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <!-- Left: Text -->
         <div>
           <h2 class="text-4xl font-extrabold text-blue-900 mb-6 tracking-tight">Why Us?</h2>
@@ -18,7 +18,7 @@
         </div>
   
         <!-- Right: Visual -->
-        <div class="flex justify-center">
+        <div class="flex justify-center hidden md:block">
           <img
             src="../assets/bld_nobg.png"
             alt="Digital Collaboration"

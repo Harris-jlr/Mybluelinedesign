@@ -3,6 +3,20 @@
       <h1 class="text-4xl font-bold mb-4">{{ page?.title }}</h1>
       <img v-if="page?.image" :src="page.image" :alt="page.title" class="w-full h-64 object-cover rounded mb-6" />
       <p class="text-lg whitespace-pre-line">{{ page?.body }}</p>
+      <!-- Contact CTA -->
+      <section class="py-16 px-4 md:px-12 lg:px-24 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Let’s Talk</h2>
+        <p class="mb-6 text-lg">Ready to connect about investment or partnership? Reach out and let’s start a conversation.</p>
+        <button class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-full transition">
+            <a
+            href="mailto:contactus@bluelinedesign.org"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-full transition"
+            >
+            Contact Us
+            </a>
+
+        </button>
+      </section>
       <div class="max-w-6xl mt-16">
         <InvestorCards />
       </div>  

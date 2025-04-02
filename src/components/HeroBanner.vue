@@ -9,7 +9,7 @@
       <img
             src="../assets/mainblur.png"
             alt="Hero Visual"
-            class="absolute right-0 max-w-2xl w-auto h-full object-cover"
+            class="absolute hidden sm:block right-0 max-w-2xl w-auto h-full object-cover"
         />  
         
         <div class="space-y-6 z-10">
