@@ -1,12 +1,5 @@
 <template>
     <div class="bg-gray-900 flex flex-col items-center justify-center">
-      
-      <!-- Header -->
-     <!--  <h1 class="text-4xl font-bold text-center mb-6">Judy Harris</h1>
-      <p class="text-center text-lg text-gray-600">
-        Senior Experience Builder | UX/UI Leader | Digital Transformation Strategist
-      </p> -->
-      
       <!-- Filter & Sort Controls -->
       <div class="max-w-6xl bg-gray-900 rounded-xl shadow-md overflow-hidden ">
         <div class="flex flex-row justify-end my-6">

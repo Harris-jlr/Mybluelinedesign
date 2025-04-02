@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="px-6 py-12 max-w-4xl mx-auto text-gray-800">
-          <h1 class="text-4xl font-bold mb-4">{{ page?.title }}</h1>
+          <h3 class="text-4xl font-bold mb-4">{{ page?.title }}</h3>
           <img v-if="page?.image" :src="page.image" :alt="page.title" class="w-full h-64 object-cover rounded mb-6" />
           <p class="text-lg whitespace-pre-line">{{ page?.body }}</p>
         </div>

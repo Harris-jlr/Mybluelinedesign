@@ -1,13 +1,5 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
-<template>
-  <!--
-    This example requires updating your template:
 
-    ```
-    <html class="h-full bg-gray-100">
-    <body class="h-full">
-    ```
-  -->
+<template>
   <div>
     <TransitionRoot as="template" :show="sidebarOpen">
       <Dialog as="div" class="fixed inset-0 flex z-40 md:hidden" @close="sidebarOpen = false">
@@ -96,7 +88,7 @@
       <main class="flex-1">
         <div class="py-6">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+            <h6 class="text-2xl font-semibold text-gray-900">Dashboard</h6>
           </div>
           <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
             <!-- Replace with your content -->

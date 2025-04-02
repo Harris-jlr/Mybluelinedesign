@@ -9,7 +9,7 @@
       </div> -->
 
       <div class="mt-10">
-        <!-- <h1 class="text-left text-3xl tracking-tight text-gray-900 font-bold pb-8">Library Descriptions</h1> -->
+        <!-- <h3 class="text-left text-3xl tracking-tight text-gray-900 font-bold pb-8">Library Descriptions</h3> -->
         <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
