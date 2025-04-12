@@ -3,12 +3,15 @@ import home from '/src/views/home.vue'
 import about from '/src/views/about.vue'
 import header from '/src/views/header.vue'
 import OurServices from '../components/OurServices.vue'
+import StrategicPartner from '../views/StrategicPartner.vue'
 import aboutbld from '/src/views/aboutbld.vue'
 import mycodepen from '/src/views/mycodepen.vue'
 import samples from '/src/views/samplepage.vue'
 import promo from '/src/views/promo.vue'
 import Investorcta from '../components/investorcta.vue'
 import InvestorDetail from '../views/InvestorDetail.vue'
+import pricing from '../views/pricing.vue'
+
 const routes = [
     {
         path: '/',
@@ -20,12 +23,11 @@ const routes = [
         name: 'about',
         component: about,
      },
-   {
-      path: '/header',
-      name: 'header',
-      component: header,
-   },
-   
+     {
+      path: '/pricing',
+      name: 'pricing',
+      component: pricing, 
+   },   
    {
       path: '/aboutbld',
       name: 'aboutbld',
@@ -45,6 +47,11 @@ const routes = [
       path: '/promo',
       name: 'promo',
       component: promo,
+   },
+   {
+      path: '/StrategicPartner',
+      name: 'StrategicPartner',
+      component: StrategicPartner,
    },
    {
       path: '/OurServices',

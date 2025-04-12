@@ -1,12 +1,12 @@
 <template>
-    <section>
+    <div class="relative"><section>
         <div class="px-6 py-12 max-w-4xl mx-auto text-gray-800">
           <h3 class="text-4xl font-bold mb-4">{{ page?.title }}</h3>
           <img v-if="page?.image" :src="page.image" :alt="page.title" class="w-full h-64 object-cover rounded mb-6" />
           <p class="text-lg whitespace-pre-line">{{ page?.body }}</p>
         </div>
     </section>    
-    <section class="absolute right-0 left-0 mt-16 px-4 py-12 bg-gray-100">
+    <section class="right-0 left-0 mt-16 px-4 py-12 bg-gray-100">
       <h2 class="text-2xl font-semibold text-center mb-4">Other Ways to Get Involved</h2>
       <p class="text-center max-w-3xl mx-auto text-gray-700 mb-8">
         Explore additional ways to support the Bluehaven mission. Whether through partnership, sponsorship, or unique trades, there's a place for you in this journey.
@@ -32,7 +32,7 @@
         </div>
       </div>
     </section>
-    
+    </div>
       </template>
       
       <script setup>

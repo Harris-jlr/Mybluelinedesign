@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <footer class="relative bg-gray-800" aria-labelledby="footer-heading">
+  <footer class="relative bg-gray-900" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-4 lg:px-4 ">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">

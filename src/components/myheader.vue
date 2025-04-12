@@ -16,6 +16,7 @@
           <a href="/aboutbld" class="text-base font-medium text-gray-500 active:font-bold hover:text-gray-900"> About Us </a>
           <a href="/investors" class="text-base font-medium text-gray-500 active:font-bold hover:text-gray-900"> Investors </a>
           <a href="/OurServices" class="text-base font-medium text-gray-500 hover:text-gray-900"> Our Services </a>
+          <a href="/StrategicPartner" class="text-base font-medium text-gray-500 hover:text-gray-900"> Strategic Partner </a>
         </PopoverGroup>
         <div class="flex items-center md:ml-12">
           <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a>
