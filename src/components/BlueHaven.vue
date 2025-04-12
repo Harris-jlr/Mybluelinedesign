@@ -25,7 +25,7 @@
   
       <!-- Help CTA -->
       <section class="py-16 text-center px-4">
-        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Not Sure Where to Start?</h3>
+        <h3 class="text-2xl font-semibold text-[#2faadb] mb-4">Not Sure Where to Start?</h3>
         <p class="mb-6 max-w-4xl mx-auto text-gray-700">We're happy to guide you through the Bluehaven experience and show you how it can help empower your internal teams and connect with external contributors. <a href="/OurServices" class="text-blue-500 font-bold hover:text-blue-700 transition">See Services</a></p>
        
       </section>
