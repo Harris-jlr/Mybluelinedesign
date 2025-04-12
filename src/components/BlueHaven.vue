@@ -5,7 +5,7 @@
       <!-- Hero Section -->
       <section class="bg-gray-900 py-12 text-center px-4 relative">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-10 mx-auto">
-          <img src="src\assets\logos\bhlogo_tran.png" alt="Bluehaven Logo" class="w-90% lg:max-w-1xl pr-12">
+          <img src="../assets/logos/bhlogo_tran.png" alt="Bluehaven Logo" class="w-90% lg:max-w-1xl pr-12">
           <div class="text-left max-w-3xl">
             <h2 class="text-3xl lg:text-4xl font-extrabold text-[#2faadb] mb-4">Bluehaven Is Built For Developers, <br/>Backed By Vision</h2>
             <p class="text-lg text-blue-100 mb-8">
