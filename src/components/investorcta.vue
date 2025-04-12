@@ -10,10 +10,10 @@
   
       <!-- Why Invest Section -->
       <section class="py-8 px-4 md:px-12 lg:px-24">
-        <h2 class="text-3xl font-semibold mb-6">Why Invest in Bluehaven?</h2>
-        <p class="max-w-4xl mb-4">
-          Developers are being burned out, benched, or dropped from meaningful work due to outdated engagement models.
-          Bluehaven is reimagining how developers grow—through structured project sharing, fair compensation, and sustainable team building.
+        <h2 class="text-3xl font-semibold mb-6">Why Invest in us?</h2>
+        <p class="max-w-6xl mb-4">
+          We are not a temp agency or contract for hire and we aren't looking for our pie in the sky!  Our focus here at Blueline Design is to create a new environment for developers.  One that keeps their journey at the forefront and gives them a safe space to work.  Developers are being burned out, benched, or dropped from meaningful work due to outdated engagement models.
+          Blueline Design is partnering with Bluehaven to reimagine how developers can thrive and grow through structured project sharing, sustainable compensation, and amazing team building.
         </p>
         <p class="max-w-4xl">
           By investing now, you’re not just funding a product—you’re backing a movement for better, healthier tech work.
@@ -23,7 +23,7 @@
       <!-- Engagement Options Placeholder -->
       <section class="text-gray-50 py-8 px-4 md:px-12 lg:px-24 bg-gray-900">
         <h2 class="text-3xl font-semibold mb-8">Ways to Support</h2>
-        <p class="text-lg max-w-4xl mb-8">
+        <p class="text-lg max-w-6xl mb-8">
           Whether you’re an angel investor, philanthropist, or advocate for tech reform, there’s a place for you in our journey.
         </p>
         <!-- Placeholder for cards -->
