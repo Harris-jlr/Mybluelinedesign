@@ -12,7 +12,7 @@
               This application dials the focus in on the developer's journey.  Creating a sustainable environment that moves away from chaos and towards harmony. This safehaven creates structured task flows, personal guidance, and shared momentum that speeds up development and creates better products.  Bluehaven keeps your developers engaged, overhead low and your projects thriving.
             </p>
             <div class="flex flex-wrap gap-4">
-              <button class="bg-[#2faadb] text-white px-6 py-3 rounded-full hover:bg-blue-400 transition">
+              <button class="bg-[#2faadb] text-white px-6 py-3 rounded-full hover:bg-[#138eed] transition">
                 Schedule a Demo
               </button>
               <button class="bg-white border border-[#2faadb] text-[#2faadb] px-6 py-3 rounded-full hover:bg-blue-50 transition">
