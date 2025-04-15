@@ -24,12 +24,12 @@
           <div class="mt-8 flex flex-wrap items-center gap-5">
             <a href="/aboutbld" class="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-full transition shadow-md">Learn More About Us</a>
   
-            <button class="flex items-center gap-3 group">
+            <!-- <button class="flex items-center gap-3 group">
               <div class="h-12 w-12 rounded-full border-2 border-white flex items-center justify-center group-hover:bg-white group-hover:text-blue-500 transition">
                 ▶
               </div>
               <span class="text-sm text-white group-hover:underline">Video Showcase</span>
-            </button>
+            </button> -->
           </div>
         </div>
   

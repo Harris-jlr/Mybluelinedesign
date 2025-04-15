@@ -2,7 +2,7 @@
   <Popover class="relative bg-white">
     <div class="flex justify-between items-center px-4 pt-4  pb-0 sm:px-6 md:justify-start md:space-x-10">
       <div>
-           <img class="w-24" src="../assets/light1sq.png" alt="" >
+           <img class="w-20 pb-2" src="../assets/logos/final-BLD-logo.png" alt="" >
       </div>
       <div class="-mr-2 -my-2 md:hidden">
         <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

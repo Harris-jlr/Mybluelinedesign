@@ -2,42 +2,43 @@
 <template>
   <footer class="relative bg-gray-900" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-4 lg:px-4 ">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+    <div class="mx-auto py-12 px-4 sm:px-6 lg:py-4 lg:px-4 ">
+      <div class="md:grid md:grid-cols-3 xl:gap-8">
         <!--copyright-->
         <div class="space-y-8 xl:col-span-1">
           <p class="text-base text-gray-400 xl:text-center">&copy; 2025 Blueline Design, LLC. All rights reserved.</p>
         </div>
-        <!--empty column-->
-        <div class="mt-2 mb-6 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-          <div class="md:grid md:grid-cols-1 md:gap-8"></div>
-        </div>
-        <!--middle columns-->
-        <div class="md:right-80 grid grid-cols-2 gap-8">
+       
+      <!--middle columns-->
+      <div class="md:right-80 grid grid-cols-2 gap-8">
           <div class="mt-2 md:mt-0">
-            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Solutions</h3>
             <ul role="list" class="mt-2">
               <li v-for="item in navigation.solutions" :key="item.name">
-                <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                <a :href="item.href" class="text-base text-white hover:text-gray-900">
                   {{ item.name }}
                 </a>
               </li>
             </ul>
           </div>
           <div class="mt-2 md:mt-0">
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+              <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
               <ul role="list" class="mt-2">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                  <a :href="item.href" class="text-base text-white hover:text-gray-900">
                     {{ item.name }}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
+
+           <!--empty column-->
+          <div class="mt-2 mb-2 flex justify-center">  
+              <img class="w-36" src="../assets/logos/steellogo.png" alt="" >  
+          </div>
         </div>
       </div>
-   
   </footer>
 </template>
 
