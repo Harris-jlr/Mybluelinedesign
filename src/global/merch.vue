@@ -125,7 +125,7 @@ import conference from '../assets/ads/conference.png';
 import arizona_downtown from '../assets/ads/arizona_downtown.png';
 import bld_backpack from '../assets/images/bld_backpack.png';
 import bld_mug from '../assets/images/bld_mug.png';
-import bld_Portfolio from '../assets/images/bld_Portfolio.png';
+import bld_Portfolio from '../assets/images/bld_portfolio.png';
 import bld_hat from '../assets/images/bld_hat.png';
 import bld_buckle from '../assets/images/bld_buckle.png';
 import bld_brand from '../assets/images/bld_brand.png';
