@@ -20,6 +20,9 @@
         </p>
       </section>
   
+      <section class="px-10 py-10">
+        <Stepper />
+      </section>
       <!-- Engagement Options Placeholder -->
       <section class="text-gray-50 py-8 px-4 md:px-12 lg:px-24 bg-gray-900">
         <h2 class="text-3xl font-semibold mb-8">Ways to Support</h2>
@@ -51,10 +54,11 @@
   </template>
   
   <script>
+import Stepper from '../contents/stepper.vue';
 import BetterCards from './BetterCards.vue';
 
 export default {
-  components: { BetterCards },
+  components: { BetterCards, Stepper },
 }
   // Placeholder for future enhancements like modal, routing, or form logic
   </script>
