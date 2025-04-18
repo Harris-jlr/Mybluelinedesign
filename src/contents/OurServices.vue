@@ -22,6 +22,7 @@
         </div>
       </div>
     </div>
+    <Stepper />
   </template>
   
   <script>
@@ -33,6 +34,7 @@
     ScaleIcon,
     ChartBarIcon,
   } from '@heroicons/vue/outline'
+  import Stepper from './stepper.vue';
   
   const features = [
     {
@@ -74,11 +76,14 @@
   ]
   
   export default {
-    setup() {
-      return {
-        features,
-      }
-    },
+  components: {
+    Stepper
+  },
+  setup() {
+    return {
+      features
+    }
   }
+}
   </script>
   
