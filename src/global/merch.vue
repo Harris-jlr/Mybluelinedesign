@@ -103,13 +103,16 @@
           </div>
   
           <!-- Culture quote -->
-          <div class="text-center pt-20">
+          <div class="text-center py-12">
             <h3 class="text-2xl font-semibold text-gray-800 mb-2">Worn with purpose. Backed by heart.</h3>
             <p class="text-gray-600 max-w-3xl mx-auto">Blueline gear isn’t just for show—it’s a symbol of our team-first culture. We design for people, for progress, and for pride in the work we do together.</p>
           </div>
         </div>
       </div>
     </section>
+
+   
+
   </template>
   
 <script setup>
@@ -121,9 +124,4 @@ import diagram from '../assets/ads/thecollective.png';
 import conference from '../assets/ads/conference.png';
 import arizona_downtown from '../assets/ads/arizona_downtown.png';
 
-
-  </script>
-  
-  <style scoped>
-  /* Custom styles if needed */
-  </style>
+</script>
