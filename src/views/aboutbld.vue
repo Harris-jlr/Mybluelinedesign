@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AboutUs from '../components/aboutus.vue'
+import AboutUs from '../contents/aboutus.vue'
 import hero2 from '../components/hero2.vue'
 
 export default {

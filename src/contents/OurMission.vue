@@ -18,7 +18,7 @@
         </div>
   
         <!-- Right: Visual -->
-        <div class="flex justify-center hidden md:block">
+        <div class="flex justify-center hidden md:block" >
           <img
             src="../assets/bld_nobg.png"
             alt="Digital Collaboration"

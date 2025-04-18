@@ -7,7 +7,7 @@
 <script>
 
 
-import aboutus from '/src/components/aboutus.vue'
+import aboutus from '/src/contents/aboutus.vue'
 
 export default {
   components: { aboutus, },

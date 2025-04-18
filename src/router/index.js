@@ -1,13 +1,11 @@
 import { createRouter , createWebHistory } from 'vue-router'
-import home from '/src/views/home.vue'
-import about from '/src/views/about.vue'
-import header from '/src/views/header.vue'
-import OurServices from '../components/OurServices.vue'
+import home from '../views/home.vue'
+import about from '../views/about.vue'
+import merch from '../global/merch.vue'
+import OurServices from '../contents/OurServices.vue'
 import StrategicPartner from '../views/StrategicPartner.vue'
-import aboutbld from '/src/views/aboutbld.vue'
-import mycodepen from '/src/views/mycodepen.vue'
-import samples from '/src/views/samplepage.vue'
-import promo from '/src/views/promo.vue'
+import aboutbld from '../views/aboutbld.vue'
+import mycodepen from '../views/mycodepen.vue'
 import Investorcta from '../components/investorcta.vue'
 import InvestorDetail from '../views/InvestorDetail.vue'
 import pricing from '../views/pricing.vue'
@@ -24,6 +22,11 @@ const routes = [
         component: about,
      },
      {
+      path: '/merch',
+      name: 'merch',
+      component: merch,
+   },
+     {
       path: '/pricing',
       name: 'pricing',
       component: pricing, 
@@ -34,19 +37,9 @@ const routes = [
       component: aboutbld,
    },
    {
-      path: '/samples',
-      name: 'samples',
-      component: samples,
-   },
-   {
       path: '/mycodepen',
       name: 'mycodepen',
       component: mycodepen,
-   },
-   {
-      path: '/promo',
-      name: 'promo',
-      component: promo,
    },
    {
       path: '/StrategicPartner',

@@ -2,9 +2,9 @@
   <div class="bg-gray-900 ">
     <div class="text-gray-100 px-6 py-10 max-w-7xl mx-auto space-y-16">
      <!-- Meet the Team -->
-     <section class="bg-gray-900 text-white py-12 px-6">
+     <section class="bg-gray-900 text-white py-12 px-4">
       <h2 class="text-3xl font-bold text-center mb-10">Meet the Team</h2>
-      <div class="flex flex-wrap justify-center gap-6">
+      <div class="flex flex-wrap justify-center gap-12">
 
           <div
           v-for="member in bios"
@@ -20,7 +20,7 @@
 
            <h3 class="text-xl font-semibold">{{ member.name }}</h3>
            <p class="text-sm text-blue-400 font-medium mb-2">{{ member.title }}</p>
-           <p class="text-sm text-gray-300">{{ member.bio }}</p>
+           <p class="w-56 text-xs lg:text-sm text-gray-300">{{ member.bio }}</p>
           </div>
         </div>
       </section>

@@ -3,16 +3,11 @@
     <div class="pt-2 pb-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mt-10">
+          <h2 class="text-3xl text-center font-bold pb-12">Our Services</h2>
           <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <div
-              v-for="feature in features"
-              :key="feature.name"
-              class="relative"
-            >
+            <div v-for="feature in features" :key="feature.name" class="relative" >
               <dt>
-                <div
-                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
-                >
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white" >
                   <component :is="feature.icon" class="h-6 w-6" aria-hidden="true" />
                 </div>
                 <p class="ml-16 text-lg leading-6 font-medium text-gray-900">

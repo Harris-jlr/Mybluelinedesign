@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import BluehavenPricing from '../components/BluehavenPricing.vue';
+import BluehavenPricing from '../contents/BluehavenPricing.vue';
 
 export default {
   components: { BluehavenPricing },

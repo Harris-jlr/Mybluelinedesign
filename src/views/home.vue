@@ -9,7 +9,7 @@
 <script>
 import Opportunities from '../components/Opportunities.vue';
 import HeroBanner from '../components/HeroBanner.vue'
-import OurMission from '../components/OurMission.vue';
+import OurMission from '../contents/OurMission.vue';
 
 export default {
   components: { HeroBanner,  OurMission, Opportunities },
