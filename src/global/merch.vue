@@ -70,33 +70,33 @@
           <!-- Merch Details -->
           <div class="grid lg:grid-cols-3 gap-8 text-center">
             <div>
-              <img src="../assets/images/bld_backpack.png" alt="Branded backpack" class="mx-auto rounded-lg shadow-md">
+              <img :src="bld_backpack" alt="Branded backpack" class="mx-auto rounded-lg shadow-md">
               <h4 class="text-lg font-medium mt-4 text-gray-800">The Backpack</h4>
               <p class="text-gray-600 text-sm">Durable, clean, and always ready. With full logo on front pocket.</p>
             </div>
             <div>
-              <img src="../assets/images/bld_mug.png" alt="Branded mug" class="mx-auto rounded-lg shadow-md">
+              <img :src="bld_mug" alt="Branded mug" class="mx-auto rounded-lg shadow-md">
               <h4 class="text-lg font-medium mt-4 text-gray-800">The Mug</h4>
               <p class="text-gray-600 text-sm">Insulated travel tumbler with matte black finish and bold Blueline mark.</p>
             </div>
             <div>
-              <img src="../assets/images/bld_Portfolio.png" alt="Branded Portfolio" class="mx-auto rounded-lg shadow-md">
+              <img :src="bld_Portfolio" alt="Branded Portfolio" class="mx-auto rounded-lg shadow-md">
               <h4 class="text-lg font-medium mt-4 text-gray-800">The Portfolio</h4>
               <p class="text-gray-600 text-sm">Insulated travel tumbler with matte black finish and bold Blueline mark.</p>
             </div>
             <div>
-              <img src="../assets/images/bld_hat.png" alt="Branded hat" class="mx-auto rounded-lg shadow-md">
+              <img :src="bld_hat" alt="Branded hat" class="mx-auto rounded-lg shadow-md">
               <h4 class="text-lg font-medium mt-4 text-gray-800">The Hat</h4>
               <p class="text-gray-600 text-sm">Dark navy with a silver + blue embroidered logo. Casual cool.</p>
             </div>
             <div>
-              <img src="../assets/images/bld_buckle.png" alt="Branded Buckle" class="mx-auto rounded-lg shadow-md">
+              <img :src="bld_buckle" alt="Branded Buckle" class="mx-auto rounded-lg shadow-md">
               <h4 class="text-lg font-medium mt-4 text-gray-800">The Buckle</h4>
               <p class="text-gray-600 text-sm">Dark navy with a silver + blue embroidered logo. Casual cool.</p>
             </div>
             
             <div>
-              <img src="../assets/images/bld_brand.png" alt="Branded Brand" class="mx-auto rounded-lg shadow-md">
+              <img :src="bld_brand" alt="Branded Brand" class="mx-auto rounded-lg shadow-md">
               <h4 class="text-lg font-medium mt-4 text-gray-800">The Brand</h4>
               <p class="text-gray-600 text-sm">Insulated travel tumbler with matte black finish and bold Blueline mark.</p>
             </div>
@@ -123,5 +123,11 @@ import chatting_afterwork from '../assets/ads/chatting_afterwork.png';
 import diagram from '../assets/ads/thecollective.png';
 import conference from '../assets/ads/conference.png';
 import arizona_downtown from '../assets/ads/arizona_downtown.png';
+import bld_backpack from '../assets/images/bld_backpack.png';
+import bld_mug from '../assets/images/bld_mug.png';
+import bld_Portfolio from '../assets/images/bld_Portfolio.png';
+import bld_hat from '../assets/images/bld_hat.png';
+import bld_buckle from '../assets/images/bld_buckle.png';
+import bld_brand from '../assets/images/bld_brand.png';
 
 </script>
