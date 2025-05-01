@@ -57,7 +57,7 @@
   </template>
 
 <script>
-import RequestForm from '../components/RequestForm.vue'
+import RequestForm from '../components/requestform.vue'
 
 export default {
   components: {
