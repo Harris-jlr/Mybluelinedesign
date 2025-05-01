@@ -93,30 +93,53 @@
   </template>
   
   <script>
-  export default {
-    name: 'RequestForm',
-    data() {
-      return {
-        showNDA: false,
-        ndaSigned: false,
-        form: {
-          name: '',
-          email: '',
-          link: '',
-          interest: '',
-          message: '',
-          startDate: '',
-          availability: '',
-          confirmedNDA: false
-        }
+export default {
+  name: 'RequestForm',
+  data() {
+    return {
+      showNDA: false,
+      ndaSigned: false,
+      form: {
+        name: '',
+        email: '',
+        link: '',
+        interest: '',
+        message: '',
+        startDate: '',
+        availability: '',
+        confirmedNDA: false
+      }
+    };
+  },
+  methods: {
+    async submitForm() {
+      const payload = {
+        name: this.form.name,
+        email: this.form.email,
+        linkedin: this.form.link,
+        availability: this.form.availability,
+        interests: [this.form.interest],
+        skills: this.form.message ? this.form.message.split(',').map(s => s.trim()) : []
       };
-    },
-    methods: {
-      submitForm() {
-        console.log('Captured contributor interest:', this.form);
+
+      try {
+        const res = await fetch('/.netlify/functions/save-contributor-request', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await res.json();
+        console.log('Response from Notion function:', result);
+
+        // Optional: show a success message here before closing
         this.$emit('close');
+      } catch (error) {
+        console.error('Error submitting to Notion:', error);
       }
     }
-  };
-  </script>
+  }
+};
+</script>
+
   
