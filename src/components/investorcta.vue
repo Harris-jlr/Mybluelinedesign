@@ -54,7 +54,7 @@
   </template>
   
   <script>
-import Stepper from '../contents/stepper.vue';
+import Stepper from '../contents/Stepper.vue';
 import BetterCards from './BetterCards.vue';
 
 export default {
