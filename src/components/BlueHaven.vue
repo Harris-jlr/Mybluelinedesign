@@ -1,9 +1,9 @@
 <template>
-    <div class="min-h-screen bg-white text-gray-900">
+    <div class="bg-white text-gray-900">
      
   
       <!-- Hero Section -->
-      <section class="bg-gray-900 py-12 text-center px-4 relative">
+      <section class="bg-blue-900 py-10 text-center px-4 relative">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-10 mx-auto">
           <img src="../assets/logos/bhlogo_tran.png" alt="Bluehaven Logo" class="w-90% lg:max-w-1xl pr-12">
           <div class="text-left max-w-3xl">
@@ -22,13 +22,59 @@
           </div>
         </div>
         </section>
-  
-      <!-- Help CTA -->
-      <section class="py-16 text-center px-4">
-        <h3 class="text-2xl font-semibold text-[#2faadb] mb-4">Not Sure Where to Start?</h3>
-        <p class="mb-6 max-w-4xl mx-auto text-gray-700">We're happy to guide you through the Bluehaven experience and show you how it can help empower your internal teams and connect with external contributors. <a href="/OurServices" class="text-blue-500 font-bold hover:text-blue-700 transition">See Services</a></p>
-       
+
+   <!-- Contributor CTA -->
+      <section class="py-6 text-center px-4">
+        <p class="text-center text-gray-700">
+          <strong class="text-blue-500 text-xl">Want to contribute?</strong>
+          <br />
+          Submit a short form to join the developer collective and access meaningful project work.
+          <br />
+          <button @click="showContributorForm = true" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-full shadow hover:bg-blue-700 transition">
+            Offer to Contribute
+          </button>
+        </p>
       </section>
-      
+
+      <!-- Contributor Form Component -->
+     <!-- Modal Overlay -->
+<div v-if="showContributorForm" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-5xl max-h-[90vh] overflow-y-auto p-8 relative">
+    <!-- Close Button -->
+    <button @click="showContributorForm = false" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 text-2xl font-bold">
+      &times;
+    </button>
+
+    <!-- Form -->
+    <RequestForm @close="showContributorForm = false" />
+  </div>
+</div>
+
+
+
+            
     </div>
   </template>
+
+<script>
+import RequestForm from '../components/RequestForm.vue'
+
+export default {
+  components: {
+    RequestForm
+  },
+  data() {
+    return {
+      showContributorForm: false
+    }
+  },
+  methods: {
+    revealForm() {
+      this.showContributorForm = true;
+      this.$nextTick(() => {
+        document.getElementById('contributor-form')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  }
+}
+</script>

@@ -14,6 +14,8 @@
     "@headlessui/vue": "^1.5.0",
     "@heroicons/vue": "^1.0.6",
     "chart.js": "^2.9.4",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.13",
     "vuex": "^4.0.2"

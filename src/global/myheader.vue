@@ -2,7 +2,7 @@
   <Popover class="relative bg-white">
     <div class="flex justify-between items-center px-4 pt-4  pb-0 sm:px-6 md:justify-start md:space-x-10">
       <div>
-           <img class="w-20 pb-2" src="../assets/logos/final-BLD-logo.png" alt="" >
+        <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900"> <img class="w-20 pb-2" src="../assets/logos/final-BLD-logo.png" alt="" ></a>
       </div>
       <div class="-mr-2 -my-2 md:hidden">
         <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -12,16 +12,18 @@
       </div>
       <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
         <PopoverGroup as="nav" class="flex space-x-10">
-          <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900"> Home </a>
           <a href="/aboutbld" class="text-base font-medium text-gray-500 active:font-bold hover:text-gray-900"> About Us </a>
           <a href="/investors" class="text-base font-medium text-gray-500 active:font-bold hover:text-gray-900"> Investors </a>
           <a href="/OurServices" class="text-base font-medium text-gray-500 hover:text-gray-900"> Our Services </a>
           <a href="/StrategicPartner" class="text-base font-medium text-gray-500 hover:text-gray-900"> Strategic Partner </a>
+          <a href="/Pricing" class="text-base font-medium text-gray-500 hover:text-gray-900"> Pricing </a>
           <a href="/merch" class="text-base font-medium text-gray-500 hover:text-gray-900"> Merch </a>
         </PopoverGroup>
         <div class="flex items-center md:ml-12">
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a>
-        </div>
+          <router-link to="/login" class="text-gray-700 hover:text-blue-500 font-bold">
+            Sign In
+          </router-link>
+          </div>
       </div>
     </div>
 

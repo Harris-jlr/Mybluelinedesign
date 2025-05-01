@@ -1,0 +1,13 @@
+{
+  "name": "Joe Bob",
+  "business": "Cold Front AC",
+  "webaddress": "www.mysite.com",
+  "email": "email@ac.com",
+  "phone": "713-305-9282",
+  "timePreference": "Morning",
+  "contactPreference": "Email",
+  "message": "call soon we need you",
+  "plan": "Growth",
+  "submittedAt": "2025-04-28T20:03:45.231Z",
+  "type": "booking"
+}
