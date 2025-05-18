@@ -1,28 +1,7 @@
 <template>
     <div class="bg-white text-gray-800">
-      <!-- Hero Section -->
-      <section class="w-full py-8 px-4 md:px-12 lg:px-24 bg-gradient-to-r from-blue-100 to-blue-200">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Be Part of Something Bigger.</h1>
-        <p class="text-lg md:text-xl max-w-3xl">
-          Invest in the future of developer work—one that’s fair, flexible, and built to last.
-        </p>
-      </section>
+     
   
-      <!-- Why Invest Section -->
-      <section class="py-8 px-4 md:px-12 lg:px-24">
-        <h2 class="text-3xl font-semibold mb-6">Why Invest in us?</h2>
-        <p class="max-w-6xl mb-4">
-          We are not a temp agency or contract for hire and we aren't looking for our pie in the sky!  Our focus here at Blueline Design is to create a new environment for developers.  One that keeps their journey at the forefront and gives them a safe space to work.  Developers are being burned out, benched, or dropped from meaningful work due to outdated engagement models.
-          Blueline Design is partnering with Bluehaven to reimagine how developers can thrive and grow through structured project sharing, sustainable compensation, and amazing team building.
-        </p>
-        <p class="max-w-4xl">
-          By investing now, you’re not just funding a product—you’re backing a movement for better, healthier tech work.
-        </p>
-      </section>
-  
-      <section class="px-10 py-10">
-        <Stepper />
-      </section>
       <!-- Engagement Options Placeholder -->
       <section class="text-gray-50 py-8 px-4 md:px-12 lg:px-24 bg-gray-900">
         <h2 class="text-3xl font-semibold mb-8">Ways to Support</h2>
@@ -53,13 +32,11 @@
     </div>
   </template>
   
-  <script>
-import Stepper from '../contents/Stepper.vue';
+  <script setup>
+
 import BetterCards from './BetterCards.vue';
 
-export default {
-  components: { BetterCards, Stepper },
-}
+
   // Placeholder for future enhancements like modal, routing, or form logic
   </script>
   

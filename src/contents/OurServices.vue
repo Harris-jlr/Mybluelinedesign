@@ -1,7 +1,18 @@
 <!-- This is the OurServices.vue component -->
 <template>
+     <!-- Hero Section -->
+      <section class="w-full py-8 px-4 md:px-12 lg:px-24 bg-gradient-to-r from-blue-100 to-blue-200">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Be Part of Something Bigger.</h1>
+        <p class="text-lg md:text-xl max-w-5xl">
+          Invest in the future of developement - We are building an environment that’s flexible, and built to last.
+        </p>
+      </section>
+      
     <div class="pt-2 pb-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        
+
         <div class="mt-10">
           <h2 class="text-3xl text-center font-bold pb-12">Our Services</h2>
           <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
@@ -20,7 +31,20 @@
             </div>
           </dl>
         </div>
-      </div>
+    </div>
+         <!-- Why Invest Section 
+      <section class="py-28 px-4 md:px-12 lg:px-24">
+        <h2 class="text-3xl font-semibold mb-6">Why Invest in us?</h2>
+        <p class="max-w-6xl mb-4">
+          We are not a temp agency or contract for hire and we aren't looking for our pie in the sky!  Our focus here at Blueline Design is to create a new environment for developers.  One that keeps their journey at the forefront and gives them a safe space to work.  Developers are being burned out, benched, or dropped from meaningful work due to outdated engagement models.
+          Blueline Design is partnering with Bluehaven to reimagine how developers can thrive and grow through structured project sharing, sustainable compensation, and amazing team building.
+        </p>
+        <p class="max-w-4xl">
+          By investing now, you’re not just funding a product—you’re backing a movement for better, healthier tech work.
+        </p>
+      </section>-->
+
+      
     </div>
   </template>
   

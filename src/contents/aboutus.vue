@@ -40,7 +40,11 @@
       </p>
     </section>
 
-    <!-- Our Services -->
+        <section class="bg-white text-gray-900 px-10 py-28">
+          <Stepper />
+        </section>
+
+    <!-- Our Services 
     <section>
       <h2 class="text-3xl font-bold text-white mb-4">Our Services</h2>
       <ul class="list-disc list-inside space-y-2 text-gray-300">
@@ -50,7 +54,7 @@
         <li><strong>Design:</strong> UI/UX design that balances usability with delight, crafted by people who build what they design.</li>
         <li><strong>Development:</strong> Front-end builds powered by modern frameworks, accessibility best practices, and performance optimization.</li>
       </ul>
-    </section>
+    </section>-->
 
    
   </div>
@@ -58,7 +62,7 @@
 </template>
 
 <script setup>
-
+import Stepper from '../contents/Stepper.vue';
 import JudyImg from '../assets/team/JudyR.png'
 import HeathImg from '../assets/team/HeathB.png'
 import DerekImg from '../assets/team/DerekR.png'
@@ -69,6 +73,7 @@ import BradleyImg from '../assets/team/BradleyL.png'
 import CassidyImg from '../assets/team/CassidyS.png'
 import philImg from '../assets/team/PhilM.png'
 // import TomImg from '../assets/team/TomB.png'
+
 
 const bios = [
 {

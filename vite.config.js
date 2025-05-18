@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: { '@': '/src' },
   },
-  base: '', // Adjust based on deployment path
+  base: '/', // Adjust based on deployment path
   build: {
     rollupOptions: {
       output: {
