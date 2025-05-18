@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: { '@': '/src' },
   },
-  base: '/mybluelinedesign/', // Adjust based on deployment path
+  base: '/mybluelinedesign.org/', // Adjust based on deployment path
   build: {
     rollupOptions: {
       output: {
