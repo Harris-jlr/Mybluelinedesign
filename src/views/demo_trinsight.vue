@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import loader from '/src/components/loader.vue'
-import pricing from '/src/components/pricing.vue'
+import loader from '@/components/loader.vue'
+import pricing from '@/components/pricing.vue'
 
 export default {
   components: {loader, pricing },

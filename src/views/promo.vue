@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import promo_container from '/src/components/promo_container.vue'
+import promo_container from '@/components/promo_container.vue'
 
 export default {
   components: { promo_container },
@@ -27,7 +27,7 @@ export default {
 </template>
 
 <script>
-import mydocumentation from '/src/components/mydocumentation.vue'
+import mydocumentation from '@/components/mydocumentation.vue'
 
 export default {
   components: { mydocumentation },

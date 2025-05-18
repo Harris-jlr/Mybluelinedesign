@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import worktogether from '/src/components/worktogether.vue'
+import worktogether from '@/components/worktogether.vue'
 
 export default {
   components: { worktogether },

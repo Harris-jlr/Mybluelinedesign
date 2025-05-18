@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import contactcard from '/src/components/contactcard.vue'
+import contactcard from '@/components/contactcard.vue'
 
 export default {
   components: { contactcard },

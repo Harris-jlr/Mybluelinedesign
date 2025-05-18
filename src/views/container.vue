@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import flipthecard from '/src/components/flipthecard.vue'
+import flipthecard from '@/components/flipthecard.vue'
 
 export default {
   components: { flipthecard },

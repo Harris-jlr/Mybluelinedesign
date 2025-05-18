@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import mydocumentation from '/src/components/mydocumentation.vue'
-import myportfolio from '/src/components/myportfolio.vue'
-import myskills from '/src/components/myskills.vue'
-import anotherview from '/src/components/anotherview.vue'
+import mydocumentation from '@/components/mydocumentation.vue'
+import myportfolio from '@/components/myportfolio.vue'
+import myskills from '@/components/myskills.vue'
+import anotherview from '@/components/anotherview.vue'
 
 export default {
   components: { mydocumentation, myportfolio, myskills, anotherview },

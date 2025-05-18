@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import myheader from '/src/components/myheader.vue'
+import myheader from '@/components/myheader.vue'
 
 export default {
   components: { myheader },

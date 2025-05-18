@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import myheader from '/src/global/myheader.vue'
-import myfooter from '/src/global/myfooter.vue'
+import myheader from '@/global/myheader.vue'
+import myfooter from '@/global/myfooter.vue'
 
 export default {
   components: { myheader, myfooter },
